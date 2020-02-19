@@ -1,0 +1,11 @@
+# Clústers partitivos{#kmeans}
+
+## K medias
+
+## Librería `factoextra`
+
+## K mediano
+
+## Minibatch kmeans
+
+## spark kmeans
