@@ -1,3 +1,58 @@
 # Aprendizaje semi-supervisado
 
+En esta sección estudiaremos un tipo de problema intermedio entre supervisado y no supervisado, que es muy común en la práctica.  
+
 ## Librería `s2net`
+
+La librería `s2net` de R resuelve un problema de optimización similar al elastic-net, pero para tratar con datos semi-supervisados. No obstante, es más general, e incluye el caso de datos supervisados también. Fue concebido específicamente para resolver problemas de transfer-learning en datos de alta dimensión, donde además de ajustar un modelo lineal, se desea incluir solamente un subconjunto de variables explicativas en el modelo (como hace elastic-net).
+
+Más información aquí: https://github.com/jlaria/s2net
+
+You can install the released version of `s2net` from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("s2net")
+```
+
+The development version can be installed with:
+
+``` r
+devtools::install_github("jlaria/s2net", build_vignettes = TRUE)
+```
+
+This is a basic example which shows you how to use the package. Detailed examples can be found in the documentation and vignettes. 
+
+```{r}
+library(s2net)
+# Auto-MPG dataset is included for benchmark
+data("auto_mpg")
+```
+
+Semi-supervised data is made of a labeled dataset `xL`, the labels `yL`, and unlabeled data `xU`.  Package `s2net` includes the function `s2Data` to process semi-supervised datasets. 
+
+```{r}
+head(auto_mpg$P2$xL, 2) # labeled data
+head(auto_mpg$P2$yL, 2) # labels
+head(auto_mpg$P2$xU, 2) # unlabeled data
+
+train = s2Data(auto_mpg$P2$xL, auto_mpg$P2$yL, auto_mpg$P2$xU, preprocess = TRUE)
+
+head(train$xL, 2)
+```
+
+The data is centered and scaled, and factor variables are automatically converted to numerical dummies. Constant columns are also removed. If we wanted to use validation/test data, we must pre-process it according to the training data, with:
+
+```{r}
+valid = s2Data(auto_mpg$P2$xU, auto_mpg$P2$yU, preprocess = train)
+```
+
+There are two ways to fit a semi-supervised elastic-net using `s2net`. The easiest way is using the function `s2netR`, that returns an object of S3 class `s2netR`.
+
+```{r}
+model = s2netR(train, params = s2Params(lambda1 = 0.01, lambda2 = 0.01, gamma1 = 0.01, gamma2 = 100, gamma3 = 0.1))
+
+class(model)
+model$beta
+
+ypred = predict(model, valid$xL)
+```

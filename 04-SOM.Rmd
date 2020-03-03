@@ -1,3 +1,136 @@
 # Self Organizing Maps {#som}
 
+En esta práctica veremos un ejemplo de aplicación de los SOM.
+Comenzamos leyendo los datos
+
+```{r}
+data.protein = read.csv("data/protein.csv")
+rownames(data.protein) = data.protein$Country
+data.protein$Country = NULL
+data.protein = scale(data.protein)
+```
+
 ## Librería `kohonen`
+
+Ahora crearemos el grid SOM. Generalmente especificamos el tamaño del grid antes de entrenar el modelo.
+
+```{r}
+library(kohonen)
+som_grid = somgrid(xdim = 4, ydim= 4, topo = "hexagonal")
+```
+
+Aquí especificamos la topología de la capa de salida. En este caso, será un grid de 4x4, donde cada neurona tiene 6 vecinos. Si elegimos `topo="rectangular"` entonces cada neurona tendrá 4 vecinos.
+
+A continuación, entrenamos la red.
+
+```{r}
+som_model = som(data.protein,
+                grid = som_grid,
+                rlen = 100,
+                keep.data = T)
+```
+
+El parámetro `rlen`especifica el número de épocas (barridos sobre todo el dataset).
+
+Podemos visualizar el proceso de entrenamiento.
+
+```{r}
+plot(som_model, type = "changes")
+```
+
+Esto nos permite decidir si hay algún parámetro que debemos variar, como `rlen`, `alpha`, `radius`, etc.
+
+```{r}
+som_model = som(data.protein,
+                grid = som_grid,
+                rlen = 600,
+                keep.data = T)
+plot(som_model, type = "changes")
+```
+
+También podemos ver de forma gráfica el número de veces que cada neurona es activada en el modelo final.
+
+```{r}
+plot(som_model, type="count")
+```
+
+
+
+### U-Matrix
+
+La U-Matrix (Unified distance matrix o Neighboring distances matrix) es una representación de un SOM, donde las distancias euclídeas entre los pesos de neuronas vecinas son descritas en una imagen en escala de grises.
+
+Veamos cómo construir la U-Matrix
+
+```{r}
+plot(som_model, type="dist.neighbours", palette.name = gray.colors)
+```
+
+En un SOM los outliers se manifiestan como nodos cuyos pesos están muy alejados de los pesos de sus nodos vecinos. Por tanto, en la U-matrix los nodos outlies son los más claros. Todas las observaciones que activen nodos claros son observaciones que tienen un patrón muy diferente al resto.
+
+Si queremos recuperar las filas que activan nodos más claros, hacemos lo siguiente.
+
+```{r}
+Umat = plot(som_model, type="dist.neighbours")
+
+data = merge(data.frame(obs = rownames(data.protein),
+                        nodo = som_model$unit.classif), 
+             data.frame(nodo = 1:length(Umat),
+                        u = Umat))
+
+summary(data$u)
+
+library(dplyr)
+data %>% arrange(desc(u))
+
+```
+
+
+Podemos visualizar también las características (pesos) de cada nodo de salida. 
+
+```{r}
+plot(som_model, "codes")
+```
+
+
+### Clusters
+
+Una vez que tenemos entrenada la red, cada neurona de la capa de salida tendrá asociados unos pesos, a los que podemos acceder con
+
+```{r, eval=FALSE}
+som_model$codes
+```
+
+Estos pesos pueden ser interpretados como puntos en el espacio de los datos originales, por lo que podemos aplicarle a estos las técnicas de segmentación que ya conocemos (e.g. kmeans o hclust).
+
+En primer lugar, calculamos las distancias entre los nodos del mapa (en el espacio de los datos originales) 
+
+```{r}
+dist = object.distances(som_model, "codes")
+```
+
+A continuación, agrupamos estos nodos usando cluster jerárquico.
+
+```{r}
+hc = hclust(dist, method = "ward.D2")
+
+```
+
+Visualizamos para encontrar el número de clusters.
+
+```{r}
+library(factoextra)
+fviz_dend(hc, show_labels = F)
+som.hc = cutree(hc, k = 4)
+```
+
+```{r}
+plot(som_model, type="dist.neighbours", palette.name = gray.colors)
+add.cluster.boundaries(som_model, som.hc)
+```
+```{r}
+colors = topo.colors(3)
+plot(som_model, type="mapping", bgcol = colors[som.hc], pch = "", main = "Clusters")
+add.cluster.boundaries(som_model, som.hc)
+```
+

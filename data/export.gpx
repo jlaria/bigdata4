@@ -1,0 +1,1613 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="overpass-ide"><metadata><desc>Filtered OSM data converted to GPX by overpass turbo</desc><copyright author="The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."/><time>2020-02-28T10:08:02Z</time></metadata><wpt lat="40.4049613" lon="-3.701739"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/170951521"/></wpt><wpt lat="40.4177059" lon="-3.7084882"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+addr:housenumber=19
+addr:postcode=28013
+addr:street=Calle Arenal
+amenity=bank
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+contact:phone=+34 915480185
+contact:website=https://www.bancosantander.es
+name=Santander
+wheelchair=limited</desc><link href="http://osm.org/browse/node/178821079"/></wpt><wpt lat="40.4387505" lon="-3.6354236"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+opening_hours=Mo-Fr 08:30-14:30
+operator=Banco Santander
+wheelchair=yes</desc><link href="http://osm.org/browse/node/243534951"/></wpt><wpt lat="40.4426838" lon="-3.6412118"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/254759041"/></wpt><wpt lat="40.4379268" lon="-3.6371025"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+opening_hours=Mo-Th 08:30-16:30, Fr 08:30-14:30
+wheelchair=no</desc><link href="http://osm.org/browse/node/255248124"/></wpt><wpt lat="40.4447352" lon="-3.6353078"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/255260614"/></wpt><wpt lat="40.4952954" lon="-3.658128"><name>Santander</name><desc>addr:postcode=28050
+addr:street=Calle del Principe Carlos
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/283593788"/></wpt><wpt lat="40.4891568" lon="-3.6507341"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/299842124"/></wpt><wpt lat="40.4472931" lon="-3.7034754"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/302786461"/></wpt><wpt lat="40.455593" lon="-3.7022604"><name>node/302790294</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander</desc><link href="http://osm.org/browse/node/302790294"/></wpt><wpt lat="40.4571236" lon="-3.7014489"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/302790322"/></wpt><wpt lat="40.4617981" lon="-3.6976393"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/302793063"/></wpt><wpt lat="40.470752" lon="-3.6979381"><name>Santander</name><desc>addr:country=ES
+addr:housenumber=53
+addr:street=Avenida de Asturias
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+note=Escalón 10 cm. Ancho puerta 80 cm. Puerta abre hacia afuera.
+operator=Banco Santander
+wheelchair=no</desc><link href="http://osm.org/browse/node/302797153"/></wpt><wpt lat="40.481217" lon="-3.6653697"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/303816132"/></wpt><wpt lat="40.4406377" lon="-3.6434166"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/325067632"/></wpt><wpt lat="40.4407574" lon="-3.6627692"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/327547781"/></wpt><wpt lat="40.4298223" lon="-3.6752455"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/329128985"/></wpt><wpt lat="40.4642212" lon="-3.6960063"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=331
+addr:postcode=28039
+addr:street=Calle de Bravo Murillo
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander
+wheelchair=no
+wheelchair:description=operacion a un metro</desc><link href="http://osm.org/browse/node/344560199"/></wpt><wpt lat="40.4769179" lon="-3.7040126"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+network=Telebanco 4B
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/344791917"/></wpt><wpt lat="40.4143435" lon="-3.7250547"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+network=Telebanco 4B
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/344792950"/></wpt><wpt lat="40.4339356" lon="-3.6914943"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+addr:housenumber=3
+addr:postcode=28010
+addr:street=Calle de Miguel Ángel
+amenity=bank
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+contact:phone=+34 913100368
+contact:website=https://www.bancosantander.es
+name=Santander
+network=Telebanco 4B</desc><link href="http://osm.org/browse/node/344795461"/></wpt><wpt lat="40.4294965" lon="-3.7202664"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+network=Telebanco 4B
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/347468250"/></wpt><wpt lat="40.5062887" lon="-3.6959973"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+name=Santander
+network=Telebanco 4B</desc><link href="http://osm.org/browse/node/353131034"/></wpt><wpt lat="40.4545496" lon="-3.6717634"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/359273273"/></wpt><wpt lat="40.4463913" lon="-3.6844671"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/359306859"/></wpt><wpt lat="40.4462332" lon="-3.7121375"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/359392861"/></wpt><wpt lat="40.446208" lon="-3.713877"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/359396187"/></wpt><wpt lat="40.4427345" lon="-3.712805"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+addr:district=Chamberí
+addr:postcode=28003
+addr:province=Madrid
+addr:subdistrict=Vallehermoso
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/359400401"/></wpt><wpt lat="40.4612283" lon="-3.7080573"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/359421123"/></wpt><wpt lat="40.5049969" lon="-3.5294566"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander</desc><link href="http://osm.org/browse/node/359558567"/></wpt><wpt lat="40.5043132" lon="-3.5307931"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/359558570"/></wpt><wpt lat="40.2896074" lon="-3.7510392"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/410107670"/></wpt><wpt lat="40.4474685" lon="-3.4612111"><name>Santander</name><desc>amenity=bank
+atm=yes
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/540440728"/></wpt><wpt lat="40.4715558" lon="-3.5797139"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/582470988"/></wpt><wpt lat="40.5343447" lon="-3.4810889"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/620159124"/></wpt><wpt lat="40.4504686" lon="-3.4652993"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+network=Telebanco 4B
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/656241031"/></wpt><wpt lat="40.4829718" lon="-3.3947579"><name>Santander</name><desc>addr:city=Alcalá de Henares
+addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/673498610"/></wpt><wpt lat="40.4352856" lon="-3.6930305"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/674449751"/></wpt><wpt lat="40.4373199" lon="-3.6816159"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/674449757"/></wpt><wpt lat="40.434504" lon="-3.7011732"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander
+source=survey</desc><link href="http://osm.org/browse/node/674477987"/></wpt><wpt lat="40.4772319" lon="-3.6460466"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Santander</desc><link href="http://osm.org/browse/node/747742440"/></wpt><wpt lat="40.2302211" lon="-3.7524251"><name>Santander</name><desc>addr:housenumber=9-11
+addr:postcode=28983
+addr:street=Calle Estrella Polar
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+phone=+34-914241112
+ref=963
+website=https://www.bancosantander.es/</desc><link href="http://osm.org/browse/node/765090976"/></wpt><wpt lat="40.4841064" lon="-3.3633797"><name>Santander</name><desc>addr:city=Alcalá de Henares
+addr:country=ES
+addr:housenumber=19
+addr:postcode=28801
+addr:street=Calle de Libreros
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/765364235"/></wpt><wpt lat="40.4477937" lon="-3.6641203"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+network=Telebanco 4B
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/810259137"/></wpt><wpt lat="40.4478017" lon="-3.6659639"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+network=Telebanco 4B
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/810259202"/></wpt><wpt lat="40.3902651" lon="-3.6283149"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+fixme=revisar nombre
+name=Santander</desc><link href="http://osm.org/browse/node/824722079"/></wpt><wpt lat="40.4779276" lon="-3.3732854"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/836044068"/></wpt><wpt lat="40.364042" lon="-3.5993737"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/872886423"/></wpt><wpt lat="40.4430156" lon="-3.5834291"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+network=Telebanco 4B
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/901540207"/></wpt><wpt lat="40.352793" lon="-3.6992647"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/910611791"/></wpt><wpt lat="40.3608961" lon="-3.6941509"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+network=Telebanco 4B
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/910615623"/></wpt><wpt lat="40.3988466" lon="-3.6844165"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/977355797"/></wpt><wpt lat="40.405975" lon="-3.6700292"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/977366999"/></wpt><wpt lat="40.5433997" lon="-4.0131662"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+p2pu=dpalomar</desc><link href="http://osm.org/browse/node/1232197767"/></wpt><wpt lat="40.4254177" lon="-3.7010689"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+addr:housenumber=79
+addr:postcode=28004
+addr:street=Calle de Fuencarral
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+description=Accesibilidad: escalón y puerta estrecha; cajero a alta altura
+name=Santander
+operator=Banco Santander
+phone=+34 91 5316740
+wheelchair=no
+wheelchair:description=Cajero alto, escalón alto, puertas estrechas (tipo escaner)</desc><link href="http://osm.org/browse/node/1276987416"/></wpt><wpt lat="40.4533106" lon="-3.591276"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/1297032304"/></wpt><wpt lat="40.4349734" lon="-3.6795183"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/1305153275"/></wpt><wpt lat="40.4274106" lon="-3.6956461"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=5
+addr:postcode=28004
+addr:street=Plaza de Santa Bárbara
+addr:subdistrict=Justicia
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander
+website=https://www.bancosantander.es</desc><link href="http://osm.org/browse/node/1316546879"/></wpt><wpt lat="40.4268325" lon="-3.6937409"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=15
+addr:postcode=28004
+addr:street=Calle de Génova
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander
+website=https://www.bancosantander.es</desc><link href="http://osm.org/browse/node/1316547073"/></wpt><wpt lat="40.1919418" lon="-3.6757697"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/1317348422"/></wpt><wpt lat="40.4113636" lon="-3.7073782"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander</desc><link href="http://osm.org/browse/node/1327625393"/></wpt><wpt lat="40.411183" lon="-3.7079988"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/1327625420"/></wpt><wpt lat="40.4233925" lon="-3.7105315"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+addr:housenumber=80
+addr:postcode=28013
+addr:street=Gran Vía
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander
+operator=Banco Santander
+source=survey
+wheelchair=limited</desc><link href="http://osm.org/browse/node/1352957210"/></wpt><wpt lat="40.427979" lon="-3.7145836"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander
+wheelchair=no</desc><link href="http://osm.org/browse/node/1358036190"/></wpt><wpt lat="40.3382314" lon="-3.3809496"><name>Santander</name><desc>addr:country=ES
+addr:housenumber=11
+addr:street=Plaza Mayor
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander
+source=survey</desc><link href="http://osm.org/browse/node/1383596035"/></wpt><wpt lat="40.4293328" lon="-3.7063643"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+addr:street=Glorieta de Ruiz Jiménez
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/1436445842"/></wpt><wpt lat="40.3870075" lon="-3.7435124"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/1437697014"/></wpt><wpt lat="40.3328442" lon="-3.7660426"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/1447507731"/></wpt><wpt lat="40.4257018" lon="-3.5543308"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/1466765921"/></wpt><wpt lat="40.4061674" lon="-3.7537649"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/1513666835"/></wpt><wpt lat="40.2288168" lon="-3.7557256"><name>Santander</name><desc>addr:country=ES
+addr:housenumber=7
+addr:street=Calle Estrella Antares
+amenity=bank
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+network=Telebanco 4B
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/1524567887"/></wpt><wpt lat="40.4123885" lon="-3.7314331"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/1529082689"/></wpt><wpt lat="40.4461272" lon="-3.6119092"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/1531697006"/></wpt><wpt lat="40.4500694" lon="-3.695399"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/1541983852"/></wpt><wpt lat="40.47452" lon="-3.4802213"><name>Santander</name><desc>amenity=bank
+atm=yes
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander</desc><link href="http://osm.org/browse/node/1543610627"/></wpt><wpt lat="40.3795413" lon="-3.620975"><name>Santander</name><desc>addr:housenumber=2
+addr:street=Calle Real de Arganda
+amenity=bank
+atm=yes
+name=Santander</desc><link href="http://osm.org/browse/node/1557980296"/></wpt><wpt lat="40.4274193" lon="-3.61728"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/1595009309"/></wpt><wpt lat="40.5113478" lon="-3.3474709"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+disused:amenity=bank
+name=Santander
+operator=Banco Santander
+source=knowledge</desc><link href="http://osm.org/browse/node/1639229916"/></wpt><wpt lat="40.3952296" lon="-3.7679877"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/1673713706"/></wpt><wpt lat="40.4486021" lon="-3.6511587"><name>Santander</name><desc>addr:country=ES
+addr:housenumber=99
+addr:street=Calle de Arturo Soria
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/1706497723"/></wpt><wpt lat="40.1812123" lon="-3.6842977"><name>Santander</name><desc>addr:country=ES
+addr:housename=1
+addr:housenumber=110
+addr:postcode=28341
+addr:street=Avenida del Mar Mediterráneo
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+contact:fax=+34918095663
+contact:phone=+34918017903
+name=Santander
+operator=Banco Santander
+website=https://www.bancosantander.es/</desc><link href="http://osm.org/browse/node/1716906784"/></wpt><wpt lat="40.3383916" lon="-3.8657544"><name>Santander</name><desc>addr:city=Móstoles
+addr:country=ES
+addr:housenumber=18
+addr:postcode=28933
+addr:street=Calle Violeta
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander
+ref=3599</desc><link href="http://osm.org/browse/node/1718379069"/></wpt><wpt lat="40.3258698" lon="-3.8621612"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/1718420858"/></wpt><wpt lat="40.456938" lon="-3.6996645"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/1728461262"/></wpt><wpt lat="40.4372528" lon="-3.6236542"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/1739898681"/></wpt><wpt lat="40.5069556" lon="-3.8943494"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+designation=4B
+name=Santander</desc><link href="http://osm.org/browse/node/1740499954"/></wpt><wpt lat="40.3684171" lon="-3.59916"><name>Santander</name><desc>amenity=bank
+name=Santander
+source=knowledge</desc><link href="http://osm.org/browse/node/1758322143"/></wpt><wpt lat="40.4615665" lon="-3.4720929"><name>Santander</name><desc>addr:housenumber=1
+addr:postcode=28850
+addr:street=Plaza de Europa
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/1826067848"/></wpt><wpt lat="40.2826477" lon="-3.7936979"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/1850585436"/></wpt><wpt lat="40.2892378" lon="-3.7918737"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/1850585493"/></wpt><wpt lat="40.2799377" lon="-3.7924776"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/1888351998"/></wpt><wpt lat="40.2929994" lon="-3.7859749"><name>Santander</name><desc>addr:housenumber=42
+addr:street=Calle del Callao
+amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/1942821330"/></wpt><wpt lat="40.4655457" lon="-3.7210193"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/1947229193"/></wpt><wpt lat="40.4856168" lon="-3.7035693"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2048594317"/></wpt><wpt lat="40.3620656" lon="-3.7563"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2100667953"/></wpt><wpt lat="40.3926267" lon="-3.7555532"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2133703315"/></wpt><wpt lat="40.3914286" lon="-3.6944765"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2135142828"/></wpt><wpt lat="40.3989471" lon="-3.7009017"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+designation=Banco
+name=Santander</desc><link href="http://osm.org/browse/node/2135180503"/></wpt><wpt lat="40.3957696" lon="-3.6986454"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+designation=Banco
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2135183918"/></wpt><wpt lat="40.3971482" lon="-3.6983144"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+designation=Banco
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2135185694"/></wpt><wpt lat="40.3975238" lon="-3.7045486"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2136171186"/></wpt><wpt lat="40.4057672" lon="-3.7117181"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2136177357"/></wpt><wpt lat="40.4017932" lon="-3.7002724"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2136256342"/></wpt><wpt lat="40.403254" lon="-3.7062839"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander</desc><link href="http://osm.org/browse/node/2136273272"/></wpt><wpt lat="40.4280166" lon="-3.5327824"><name>Santander</name><desc>addr:postcode=28830
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+wheelchair=yes</desc><link href="http://osm.org/browse/node/2139566944"/></wpt><wpt lat="40.4257967" lon="-3.5324649"><name>Santander</name><desc>addr:postcode=28830
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2139566953"/></wpt><wpt lat="40.4815323" lon="-3.7189942"><name>Santander</name><desc>addr:country=ES
+addr:housenumber=245
+addr:postcode=28035
+addr:street=Avenida del Cardenal Herrera Oria
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+designation=3103
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2147637938"/></wpt><wpt lat="40.3855818" lon="-3.7533283"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2203440207"/></wpt><wpt lat="40.3912975" lon="-3.7373787"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2304484491"/></wpt><wpt lat="40.3971247" lon="-3.7709522"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2316161853"/></wpt><wpt lat="40.54092" lon="-3.633721"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+network=Telebanco 4B
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2319899767"/></wpt><wpt lat="40.4267576" lon="-3.5377139"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2335451879"/></wpt><wpt lat="40.427111" lon="-3.6579362"><name>node/2339190626</name><desc>addr:country=ES
+addr:street=Calle de Ricardo Ortiz
+amenity=bank
+atm=yes
+brand=Santander</desc><link href="http://osm.org/browse/node/2339190626"/></wpt><wpt lat="40.4421083" lon="-3.6544351"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2431240905"/></wpt><wpt lat="40.3860235" lon="-3.7032103"><name>Santander</name><desc>addr:country=ES
+addr:housenumber=43-45
+addr:street=Calle de Marcelo Usera
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2441328797"/></wpt><wpt lat="40.4605948" lon="-3.4721834"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2459156684"/></wpt><wpt lat="40.4923" lon="-3.7066776"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=57
+addr:postcode=28034
+addr:street=Calle de Nuria
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+phone=+34 917 34 53 41</desc><link href="http://osm.org/browse/node/2460171684"/></wpt><wpt lat="40.3167317" lon="-3.7868905"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+network=Telebanco 4B
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2492036798"/></wpt><wpt lat="40.2392762" lon="-3.7666099"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2524749694"/></wpt><wpt lat="40.2393968" lon="-3.7686541"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2524772993"/></wpt><wpt lat="40.2382386" lon="-3.7704038"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2524803603"/></wpt><wpt lat="40.4388743" lon="-3.714206"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2525814078"/></wpt><wpt lat="40.2927299" lon="-3.7970816"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2529617332"/></wpt><wpt lat="40.4025927" lon="-3.6759869"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2529967019"/></wpt><wpt lat="40.4076276" lon="-3.6796314"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+addr:housenumber=1
+addr:postcode=28007
+addr:state=ES
+addr:street=Plaza de Mariano de Cavia
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2531446909"/></wpt><wpt lat="40.4175539" lon="-3.6695664"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+addr:housenumber=50
+addr:postcode=28007
+addr:street=Calle del Doctor Esquerdo
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2533476363"/></wpt><wpt lat="40.4041749" lon="-3.605227"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2537203284"/></wpt><wpt lat="40.269737" lon="-3.9205645"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2567677869"/></wpt><wpt lat="40.3461245" lon="-3.7100679"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2568714060"/></wpt><wpt lat="40.4216836" lon="-3.7077556"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+addr:housenumber=8
+addr:postcode=28015
+addr:street=Calle de San Bernardo
+amenity=bank
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander
+network=Telebanco 4B
+operator=Banco Santander
+wheelchair=yes
+wheelchair:description=Acceso por C/ Flor Alta</desc><link href="http://osm.org/browse/node/2586717389"/></wpt><wpt lat="40.4260123" lon="-3.6741666"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=101
+addr:postcode=28006
+addr:street=Calle de Hermosilla
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+phone=+34 914311825
+website=https://www.bancosantander.es/cssa/Satellite?empr=Santander&amp;id=20035&amp;lat=40.426175&amp;leng=es_ES&amp;lng=40.426175&amp;pagename=BuscadorOficinas/ISBGeoEmpresa/BOF_Coorporative_Skin_AccessSearch&amp;text=28001&amp;zoom=15</desc><link href="http://osm.org/browse/node/2642152852"/></wpt><wpt lat="40.4599252" lon="-3.4616392"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander
+source=survey</desc><link href="http://osm.org/browse/node/2654920712"/></wpt><wpt lat="40.435443" lon="-3.7142337"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+addr:housenumber=58
+addr:postcode=28015
+addr:street=Calle de Andrés Mellado
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander
+website=https://www.bancosantander.es</desc><link href="http://osm.org/browse/node/2671216002"/></wpt><wpt lat="40.4743958" lon="-3.3661552"><name>Santander</name><desc>addr:city=Alcalá de Henares
+addr:housenumber=35
+addr:postcode=28803
+addr:street=Paseo de Pastrana
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+phone=+34 918831603
+wheelchair=limited</desc><link href="http://osm.org/browse/node/2779182507"/></wpt><wpt lat="40.4277626" lon="-3.6828324"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+addr:housenumber=39
+addr:postcode=28001
+addr:street=Calle de Ayala
+amenity=bank
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+network=Telebanco 4B
+operator=Banco Santander
+website=https://www.bancosantander.es/cssa/Satellite?pagename=SantanderComercial/Page/SAN_Index</desc><link href="http://osm.org/browse/node/2779332424"/></wpt><wpt lat="40.3966402" lon="-3.6225488"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+addr:housenumber=2
+addr:postcode=28032
+addr:street=Calle de las Alpujarras
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2800704946"/></wpt><wpt lat="40.4390874" lon="-3.6543817"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+addr:housenumber=43
+addr:postcode=28027
+addr:street=Calle de Esteban Mora
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2801152407"/></wpt><wpt lat="40.4382564" lon="-3.6513644"><name>Santander</name><desc>addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/2805682544"/></wpt><wpt lat="40.239388" lon="-3.7692817"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2855568989"/></wpt><wpt lat="40.2417557" lon="-3.7703819"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2855647480"/></wpt><wpt lat="40.4594634" lon="-3.692349"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=37
+addr:postcode=28020
+addr:street=Calle del Poeta Joan Maragall
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+name=Santander
+operator=Santander</desc><link href="http://osm.org/browse/node/2864086252"/></wpt><wpt lat="40.4568191" lon="-3.6944227"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2864118318"/></wpt><wpt lat="40.4591197" lon="-3.6888632"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2867455332"/></wpt><wpt lat="40.4460756" lon="-3.7033504"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2867491068"/></wpt><wpt lat="40.4486089" lon="-3.7035008"><name>node/2867491085</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander</desc><link href="http://osm.org/browse/node/2867491085"/></wpt><wpt lat="40.4567385" lon="-3.707015"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2868810932"/></wpt><wpt lat="40.4758728" lon="-3.719691"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2870400674"/></wpt><wpt lat="40.4495582" lon="-3.7037906"><name>node/2887253643</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+source=Bing</desc><link href="http://osm.org/browse/node/2887253643"/></wpt><wpt lat="40.4319296" lon="-3.6557455"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=246
+addr:postcode=28027
+addr:street=Calle de Alcalá
+amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/2909756381"/></wpt><wpt lat="40.4316702" lon="-3.7067625"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander
+source=survey</desc><link href="http://osm.org/browse/node/2915208791"/></wpt><wpt lat="40.4599555" lon="-3.6865211"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+source=survey</desc><link href="http://osm.org/browse/node/2937870461"/></wpt><wpt lat="40.4060376" lon="-3.650684"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=115
+addr:postcode=28030
+addr:street=Avenida de Moratalaz
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2943803258"/></wpt><wpt lat="40.4074063" lon="-3.6473105"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=155
+addr:postcode=28030
+addr:street=Avenida de Moratalaz
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2943900605"/></wpt><wpt lat="40.4032126" lon="-3.6443946"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=124
+addr:postcode=28030
+addr:street=Calle de la Hacienda de Pavones
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2944066789"/></wpt><wpt lat="40.4103755" lon="-3.6517498"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=63
+addr:postcode=28030
+addr:street=Calle del Camino de los Vinateros
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2948243144"/></wpt><wpt lat="40.4757592" lon="-3.7411994"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/2957229132"/></wpt><wpt lat="40.4077247" lon="-3.6533824"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=1
+addr:postcode=28030
+addr:street=Plaza del Corregidor Sancho de Córdoba
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2961305927"/></wpt><wpt lat="40.4083459" lon="-3.6930694"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander</desc><link href="http://osm.org/browse/node/2971949908"/></wpt><wpt lat="40.2529816" lon="-3.8278671"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/2993001463"/></wpt><wpt lat="40.4197433" lon="-3.7061124"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+addr:housenumber=1
+addr:postcode=28013
+addr:street=Plaza de Callao
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander
+website=https://www.bancosantander.es</desc><link href="http://osm.org/browse/node/3007306700"/></wpt><wpt lat="40.4261165" lon="-3.5639143"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3048805862"/></wpt><wpt lat="40.4272367" lon="-3.5548448"><name>Santander</name><desc>addr:city=Coslada
+addr:housenumber=85
+addr:postcode=28822
+addr:street=Avenida de la Constitución
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3063736059"/></wpt><wpt lat="40.3482366" lon="-3.8084561"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3094916106"/></wpt><wpt lat="40.5547029" lon="-3.3261622"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3101105305"/></wpt><wpt lat="40.3319329" lon="-3.7619238"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3105822409"/></wpt><wpt lat="40.43455" lon="-3.7165867"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+network=Telebanco 4B
+operator=Santander</desc><link href="http://osm.org/browse/node/3136816600"/></wpt><wpt lat="40.4234627" lon="-3.655381"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3157760808"/></wpt><wpt lat="40.3853552" lon="-3.7217363"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3161138699"/></wpt><wpt lat="40.3918627" lon="-3.7262686"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3161138700"/></wpt><wpt lat="40.4328152" lon="-3.6493015"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3177621726"/></wpt><wpt lat="40.2823732" lon="-3.8086971"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3184941385"/></wpt><wpt lat="40.5451661" lon="-3.6931476"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Banco Santander
+phone=+34917352983</desc><link href="http://osm.org/browse/node/3188702369"/></wpt><wpt lat="40.494515" lon="-3.3590504"><name>Santander</name><desc>amenity=bank
+level=0
+name=Santander
+source=survey</desc><link href="http://osm.org/browse/node/3198336746"/></wpt><wpt lat="40.432349" lon="-3.652661"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3202125014"/></wpt><wpt lat="40.432541" lon="-3.6809931"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3212683923"/></wpt><wpt lat="40.4074004" lon="-3.6703819"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=126
+addr:postcode=28007
+addr:street=Calle del Doctor Esquerdo
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+drive_through=yes
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/3233443375"/></wpt><wpt lat="40.4286537" lon="-3.668029"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3245848684"/></wpt><wpt lat="40.3247894" lon="-3.7714636"><name>Santander</name><desc>addr:city=Leganés
+addr:housenumber=2
+addr:postcode=28911
+addr:street=Calle Nuestra Señora de Guadalupe
+amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/3253326516"/></wpt><wpt lat="40.4622258" lon="-3.6973934"><name>Calle de Bravo Murillo 296</name><desc>addr:housenumber=296
+addr:street=Calle de Bravo Murillo
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+wheelchair=limited
+wheelchair:description=escalón pequeño</desc><link href="http://osm.org/browse/node/3258896858"/></wpt><wpt lat="40.4392884" lon="-3.6736225"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander</desc><link href="http://osm.org/browse/node/3265474257"/></wpt><wpt lat="40.5247196" lon="-3.8847912"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3266629561"/></wpt><wpt lat="40.4226371" lon="-3.6801016"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander</desc><link href="http://osm.org/browse/node/3268797443"/></wpt><wpt lat="40.4784514" lon="-3.6683358"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Banco Santander
+name=Santander
+operator=Banco Santander</desc><link href="http://osm.org/browse/node/3284709446"/></wpt><wpt lat="40.3343351" lon="-3.8773172"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/3369951309"/></wpt><wpt lat="40.4567385" lon="-3.7069131"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3402545593"/></wpt><wpt lat="40.5766632" lon="-3.9310348"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3409751475"/></wpt><wpt lat="40.5075248" lon="-3.3480494"><name>Santander</name><desc>amenity=bank
+name=Santander
+operator=Santander</desc><link href="http://osm.org/browse/node/3411483058"/></wpt><wpt lat="40.4024273" lon="-3.6935589"><name>Santander</name><desc>amenity=bank
+atm=yes
+name=Santander</desc><link href="http://osm.org/browse/node/3417784493"/></wpt><wpt lat="40.4265593" lon="-3.6931988"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander</desc><link href="http://osm.org/browse/node/3418127824"/></wpt><wpt lat="40.4363722" lon="-3.6416711"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3425206962"/></wpt><wpt lat="40.4053803" lon="-3.6936425"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3428424941"/></wpt><wpt lat="40.4366572" lon="-3.6996856"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=99
+addr:postcode=28010
+addr:street=Calle de Santa Engracia
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+phone=+34 914 48 53 02</desc><link href="http://osm.org/browse/node/3428476967"/></wpt><wpt lat="40.4308855" lon="-3.6407542"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3439616748"/></wpt><wpt lat="40.2621141" lon="-3.8490801"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3447281086"/></wpt><wpt lat="40.5610418" lon="-4.0163069"><name>Santander</name><desc>addr:housenumber=9, local B
+addr:postcode=28210
+addr:street=Calle de las Cruces
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+phone=+34 918425112</desc><link href="http://osm.org/browse/node/3447671633"/></wpt><wpt lat="40.5607754" lon="-4.0178636"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3451396842"/></wpt><wpt lat="40.4273751" lon="-3.6421738"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3465445905"/></wpt><wpt lat="40.4304359" lon="-3.7004833"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3472054308"/></wpt><wpt lat="40.4354957" lon="-3.7155829"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3472128853"/></wpt><wpt lat="40.4290708" lon="-3.7015504"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/3473939160"/></wpt><wpt lat="40.432088" lon="-3.6985472"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/3473953462"/></wpt><wpt lat="40.5277397" lon="-3.6218069"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3556646944"/></wpt><wpt lat="40.4581166" lon="-3.4795261"><name>Santander</name><desc>amenity=bank
+name=Santander
+source=survey</desc><link href="http://osm.org/browse/node/3561459800"/></wpt><wpt lat="40.4352623" lon="-3.6929995"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3564580497"/></wpt><wpt lat="40.4379288" lon="-3.6927497"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3564580498"/></wpt><wpt lat="40.3954284" lon="-3.7111157"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3593596420"/></wpt><wpt lat="40.4519016" lon="-3.6898882"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/3611166014"/></wpt><wpt lat="40.4964556" lon="-3.3629917"><name>Santander</name><desc>addr:city=Alcalá de Henares
+addr:country=ES
+addr:housenumber=4
+addr:street=Calle José María Pereda
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3613403915"/></wpt><wpt lat="40.4649311" lon="-3.7258628"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3626031288"/></wpt><wpt lat="40.4542693" lon="-3.6543919"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3627672985"/></wpt><wpt lat="40.4470014" lon="-3.5867125"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+level=0
+name=Santander
+source=survey</desc><link href="http://osm.org/browse/node/3635958593"/></wpt><wpt lat="40.385553" lon="-3.7279108"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=119
+addr:postcode=28025
+addr:street=Calle del Camino Viejo de Leganés
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3639517550"/></wpt><wpt lat="40.3350851" lon="-3.7694542"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3644659975"/></wpt><wpt lat="40.425344" lon="-3.5662644"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3683099342"/></wpt><wpt lat="40.4252485" lon="-3.5675087"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3683103753"/></wpt><wpt lat="40.6307174" lon="-4.0054746"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3712899120"/></wpt><wpt lat="40.4841719" lon="-3.7078415"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+name=Santander
+operator=Santander</desc><link href="http://osm.org/browse/node/3715564284"/></wpt><wpt lat="40.3492954" lon="-3.8244702"><name>Santander</name><desc>addr:city=Alcorcón
+addr:housenumber=53
+addr:postcode=28923
+addr:street=Calle Jabonería
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+drive_through=no
+name=Santander
+opening_hours=8:30 - 14:30</desc><link href="http://osm.org/browse/node/3747304686"/></wpt><wpt lat="40.4451603" lon="-3.7875009"><name>Santander</name><desc>amenity=bank
+atm=yes
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander
+network=Telebanco 4B
+operator=Santander</desc><link href="http://osm.org/browse/node/3752027605"/></wpt><wpt lat="40.4273237" lon="-3.7183013"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=19
+addr:postcode=28008
+addr:street=Calle de Quintana
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+contact:website=https://www.bancosantander.es
+name=Santander
+phone=+34 915 47 34 37</desc><link href="http://osm.org/browse/node/3757433143"/></wpt><wpt lat="40.4319986" lon="-3.7167625"><name>Santander</name><desc>addr:city=Madrid
+addr:postcode=28008
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+website=https://www.bancosantander.es/</desc><link href="http://osm.org/browse/node/3766761601"/></wpt><wpt lat="40.3971737" lon="-3.6667445"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+name=Santander
+opening_hours=Mo-Fr 08:30-14:30</desc><link href="http://osm.org/browse/node/3814119950"/></wpt><wpt lat="40.3275166" lon="-3.7638209"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3825905769"/></wpt><wpt lat="40.3316751" lon="-3.771142"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3826693732"/></wpt><wpt lat="40.4643965" lon="-3.6815308"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=20
+addr:postcode=28036
+addr:street=Calle de Francisco Suárez
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3863659553"/></wpt><wpt lat="40.5357591" lon="-3.6365794"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/3875309282"/></wpt><wpt lat="40.4653304" lon="-3.630696"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+addr:housenumber=21
+addr:street=Calle Mota del Cuervo
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3926257483"/></wpt><wpt lat="40.4302334" lon="-3.7138058"><name>Santander</name><desc>addr:city=Madrid
+addr:street=Calle de Alberto Aguilera
+amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander
+operator=Santander</desc><link href="http://osm.org/browse/node/3940691949"/></wpt><wpt lat="40.444012" lon="-3.6693411"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+brand=Santander
+name=Santander
+operator=Santander</desc><link href="http://osm.org/browse/node/3949544831"/></wpt><wpt lat="40.4008629" lon="-3.7134158"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/3999793492"/></wpt><wpt lat="40.4606075" lon="-3.6810084"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=9
+addr:postcode=28036
+addr:street=Calle de Fray Bernardino Sahagún
+amenity=bank
+atm=yes
+name=Santander</desc><link href="http://osm.org/browse/node/4015107804"/></wpt><wpt lat="40.4439832" lon="-3.6956885"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/4113093608"/></wpt><wpt lat="40.3448347" lon="-3.815098"><name>Santander</name><desc>addr:housenumber=4
+addr:street=Calle Munich
+amenity=bank
+atm=yes
+level=0
+name=Santander
+network=Telebanco 4B
+opening_hours=Mo-Fr 08:30-14:00
+wheelchair=no</desc><link href="http://osm.org/browse/node/4142567491"/></wpt><wpt lat="40.4246038" lon="-3.7255332"><name>Santander</name><desc>amenity=bank
+atm=yes
+brand=Santander
+name=Santander</desc><link href="http://osm.org/browse/node/4213990620"/></wpt><wpt lat="40.4470877" lon="-3.667626"><name>Santander</name><desc>amenity=bank
+atm=yes
+brand=Santander
+name=Santander</desc><link href="http://osm.org/browse/node/4234308702"/></wpt><wpt lat="40.4606487" lon="-3.6891492"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/4251859556"/></wpt><wpt lat="40.4630033" lon="-3.6914848"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=60
+addr:postcode=28020
+addr:street=Calle del Poeta Joan Maragall
+amenity=bank
+atm=yes
+name=Santander</desc><link href="http://osm.org/browse/node/4253094134"/></wpt><wpt lat="40.4722431" lon="-3.7117847"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/4305464993"/></wpt><wpt lat="40.4060406" lon="-3.6515207"><name>Santander</name><desc>amenity=bank
+atm=yes
+name=Santander</desc><link href="http://osm.org/browse/node/4333780577"/></wpt><wpt lat="40.3105935" lon="-3.7192211"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/4334304925"/></wpt><wpt lat="40.455922" lon="-3.6188483"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+name=Santander</desc><link href="http://osm.org/browse/node/4341725790"/></wpt><wpt lat="40.4468894" lon="-3.674993"><name>Santander</name><desc>amenity=bank
+atm=yes
+name=Santander
+operator=Telebanco</desc><link href="http://osm.org/browse/node/4378129107"/></wpt><wpt lat="40.431871" lon="-3.7132676"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=14
+addr:postcode=28015
+addr:street=Calle de Guzmán el Bueno
+amenity=bank
+atm=yes
+name=Santander
+opening_hours=Mo-Fr 8:30-14:30
+phone=+34 915 49 10 99</desc><link href="http://osm.org/browse/node/4414082467"/></wpt><wpt lat="40.4776668" lon="-3.7134121"><name>Santander</name><desc>amenity=bank
+name=Santander
+name:es=Santander</desc><link href="http://osm.org/browse/node/4418360694"/></wpt><wpt lat="40.4580496" lon="-3.6770982"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=275
+addr:postcode=28016
+addr:street=Calle del Príncipe de Vergara
+amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/4443517218"/></wpt><wpt lat="40.4361005" lon="-3.7040925"><name>Santander</name><desc>amenity=bank
+name=Santander
+name:es=Santander</desc><link href="http://osm.org/browse/node/4445359690"/></wpt><wpt lat="40.4355169" lon="-3.8139973"><name>Santander</name><desc>addr:housenumber=4
+addr:postcode=28223
+addr:street=Plaza del Padre Vallet
+amenity=bank
+entrance=yes
+name=Santander
+opening_hours=Mo-Fr 08:30-14:30</desc><link href="http://osm.org/browse/node/4583845431"/></wpt><wpt lat="40.4191372" lon="-3.5696198"><name>Santander</name><desc>amenity=bank
+name=Santander
+name:es=Santander</desc><link href="http://osm.org/browse/node/4591352794"/></wpt><wpt lat="40.4350415" lon="-3.6577263"><name>Santander</name><desc>amenity=bank
+name=Santander
+name:es=Santander</desc><link href="http://osm.org/browse/node/4596500992"/></wpt><wpt lat="40.4538858" lon="-3.6793206"><name>Santander</name><desc>amenity=bank
+atm=yes
+name=Santander</desc><link href="http://osm.org/browse/node/4609517006"/></wpt><wpt lat="40.4163153" lon="-3.7058515"><name>Santander</name><desc>amenity=bank
+name=Santander
+name:es=Santander</desc><link href="http://osm.org/browse/node/4649420990"/></wpt><wpt lat="40.4291215" lon="-3.7203417"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=43
+addr:postcode=28008
+addr:street=Calle de Ferraz
+amenity=bank
+atm=yes
+contact:phone=+34  915400940
+contact:website=https://www.bancosantander.es
+name=Santander</desc><link href="http://osm.org/browse/node/4652784702"/></wpt><wpt lat="40.519764" lon="-3.895643"><name>Santander</name><desc>amenity=bank
+atm=yes
+brand=Santander
+name=Santander</desc><link href="http://osm.org/browse/node/4654261327"/></wpt><wpt lat="40.4129216" lon="-3.6999661"><name>Santander</name><desc>amenity=bank
+name=Santander
+name:es=Santander</desc><link href="http://osm.org/browse/node/4678873500"/></wpt><wpt lat="40.4136755" lon="-3.7172076"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=43
+addr:postcode=28005
+addr:street=Calle de Segovia
+amenity=bank
+contact:phone=+34 913644200
+contact:website=https://www.bancosantander.es
+name=Santander</desc><link href="http://osm.org/browse/node/4688416184"/></wpt><wpt lat="40.4059204" lon="-3.896039"><name>Santander</name><desc>amenity=bank
+atm=yes
+name=Santander</desc><link href="http://osm.org/browse/node/4718097940"/></wpt><wpt lat="40.4370143" lon="-3.7965521"><name>Santander</name><desc>amenity=bank
+name=Santander
+name:es=Santander
+opening_hours=Mo-Fr 08:30-14:30</desc><link href="http://osm.org/browse/node/4756335522"/></wpt><wpt lat="40.4821007" lon="-3.7121525"><name>Santander</name><desc>amenity=bank
+atm=yes
+brand=Santander
+name=Santander</desc><link href="http://osm.org/browse/node/4784696428"/></wpt><wpt lat="40.4361684" lon="-3.685225"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/4787002234"/></wpt><wpt lat="40.4052924" lon="-3.9973011"><name>Santander</name><desc>amenity=bank
+name=Santander
+name:es=Santander</desc><link href="http://osm.org/browse/node/4798813024"/></wpt><wpt lat="40.4526335" lon="-3.8680172"><name>Santander</name><desc>addr:postcode=28222
+amenity=bank
+name=Santander
+name:es=Santander
+opening_hours=Mo-Fr 10:00-20:30; Sa 10:00-15:00
+phone=+34 916 39 51 68
+website=http://bancosantander.es</desc><link href="http://osm.org/browse/node/4802475121"/></wpt><wpt lat="40.4468742" lon="-3.8030929"><name>Santander</name><desc>addr:street=Avenida de Juan Pablo II
+amenity=bank
+name=Santander
+name:es=Santander
+opening_hours=Mo-Fr 08:30-14:30</desc><link href="http://osm.org/browse/node/4806230035"/></wpt><wpt lat="40.4320722" lon="-3.7924224"><name>Santander</name><desc>addr:street=Avenida de Húmera
+amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/4842287921"/></wpt><wpt lat="40.4851967" lon="-3.7006806"><name>Santander</name><desc>amenity=bank
+atm=yes
+brand=Santander
+name=Santander</desc><link href="http://osm.org/browse/node/4844379639"/></wpt><wpt lat="40.4212478" lon="-3.6872931"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+addr:housenumber=9
+addr:postcode=28001
+addr:street=Calle de Claudio Coello
+amenity=bank
+atm=yes
+name=Santander
+source=survey</desc><link href="http://osm.org/browse/node/4885056596"/></wpt><wpt lat="40.5039422" lon="-3.6686786"><name>Santander</name><desc>addr:city=Madrid
+addr:country=ES
+addr:postcode=28050
+addr:street=Paseo de San Millán de la Cogolla
+amenity=bank
+atm=yes
+name=Santander
+source=survey</desc><link href="http://osm.org/browse/node/4896459159"/></wpt><wpt lat="40.2081936" lon="-3.5730093"><name>Santander</name><desc>amenity=bank
+atm=yes
+atm:network=Telebanco 4B
+atm:operator=Banco Santander
+name=Santander</desc><link href="http://osm.org/browse/node/4926389932"/></wpt><wpt lat="40.4296819" lon="-3.6932568"><name>Santander</name><desc>amenity=bank
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander
+name:es=Santander</desc><link href="http://osm.org/browse/node/4927027621"/></wpt><wpt lat="40.6279695" lon="-4.0079996"><name>Santander</name><desc>amenity=bank
+name=Santander
+name:es=Santander</desc><link href="http://osm.org/browse/node/4932282753"/></wpt><wpt lat="40.4360077" lon="-3.6914718"><name>node/4942814298</name><desc>amenity=bank
+atm=yes
+brand=Santander</desc><link href="http://osm.org/browse/node/4942814298"/></wpt><wpt lat="40.488968" lon="-3.3470658"><name>Santander</name><desc>addr:housenumber=22
+addr:postcode=28804
+addr:street=Avenida Lope de Figueroa
+amenity=bank
+atm=yes
+name=Santander</desc><link href="http://osm.org/browse/node/4945505926"/></wpt><wpt lat="40.4858104" lon="-3.3569845"><name>Santander</name><desc>addr:housenumber=6
+addr:postcode=28805
+addr:street=Avenida Don Juan de Austria
+amenity=bank
+drive_through=yes
+name=Santander</desc><link href="http://osm.org/browse/node/4950773636"/></wpt><wpt lat="40.4871501" lon="-3.3508952"><name>Santander</name><desc>addr:housenumber=32
+addr:postcode=28804
+addr:street=Avenida Don Juan de Austria
+amenity=bank
+atm=yes
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander
+opening_hours=Mo-Fr 08:30-14:30
+wheelchair=yes</desc><link href="http://osm.org/browse/node/4958365931"/></wpt><wpt lat="40.3979049" lon="-3.7838867"><name>Santander</name><desc>amenity=bank
+name=Santander
+name:es=Santander</desc><link href="http://osm.org/browse/node/4966763069"/></wpt><wpt lat="40.296717" lon="-3.8096052"><name>Santander</name><desc>addr:city=Fuenlabrada
+addr:housenumber=10
+addr:postcode=28942
+addr:street=Plaza de Orense
+amenity=bank
+atm=yes
+fax=+34 91 607 77 64
+name=Santander
+phone=+34 91 607 72 63
+ref=4105</desc><link href="http://osm.org/browse/node/5141133154"/></wpt><wpt lat="40.2883424" lon="-3.8074584"><name>Santander</name><desc>addr:city=Fuenlabrada
+addr:postcode=28943
+addr:street=Avenida de Europa
+amenity=bank
+atm=yes
+name=Santander
+ref=1536</desc><link href="http://osm.org/browse/node/5141133162"/></wpt><wpt lat="40.2849698" lon="-3.801365"><name>Santander</name><desc>addr:city=Fuenlabrada
+addr:housenumber=14
+addr:postcode=28943
+addr:street=Calle de Francia
+amenity=bank
+atm=yes
+name=Santander
+ref=3859
+website=https://www.bancosantander.es</desc><link href="http://osm.org/browse/node/5141133169"/></wpt><wpt lat="40.4172265" lon="-3.6906311"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=8
+addr:postcode=28014
+addr:street=Calle Juan de Mena
+amenity=bank
+atm=yes
+fax=+34 91 522 19 96
+name=Santander
+phone=+34 91 531 93 65
+ref=1182</desc><link href="http://osm.org/browse/node/5169123251"/></wpt><wpt lat="40.4162407" lon="-3.6919619"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=4
+addr:postcode=28014
+addr:street=Plaza de la Lealtad
+amenity=bank
+atm=yes
+fax=+34 91 523 14 10
+name=Santander
+phone=+34 91 523 37 68
+ref=0951</desc><link href="http://osm.org/browse/node/5169123252"/></wpt><wpt lat="40.4187498" lon="-3.6972419"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=39
+addr:postcode=28014
+addr:street=Calle de Alcalá
+amenity=bank
+atm=yes
+name=Santander
+ref=5100</desc><link href="http://osm.org/browse/node/5169123253"/></wpt><wpt lat="40.3195852" lon="-3.873115"><name>Santander</name><desc>addr:city=Móstoles
+addr:housenumber=57
+addr:postcode=28934
+addr:street=Avenida Dos de Mayo
+amenity=bank
+atm=yes
+name=Santander
+ref=1142</desc><link href="http://osm.org/browse/node/5204147319"/></wpt><wpt lat="40.4722268" lon="-3.8683533"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/5228863955"/></wpt><wpt lat="40.4269092" lon="-3.6042573"><name>Santander</name><desc>amenity=bank
+atm=yes
+name=Santander</desc><link href="http://osm.org/browse/node/5327752252"/></wpt><wpt lat="40.4390784" lon="-3.7112209"><name>node/5509108995</name><desc>amenity=bank
+atm=yes
+brand=Santander</desc><link href="http://osm.org/browse/node/5509108995"/></wpt><wpt lat="40.4244889" lon="-3.6759882"><name>node/5664646722</name><desc>amenity=bank
+atm=yes
+brand=Santander</desc><link href="http://osm.org/browse/node/5664646722"/></wpt><wpt lat="40.4736272" lon="-3.8723586"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/5830690837"/></wpt><wpt lat="40.4920813" lon="-3.8726098"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/5830692510"/></wpt><wpt lat="40.4738384" lon="-3.8720366"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/5830705414"/></wpt><wpt lat="40.3539647" lon="-3.5342207"><name>Santander</name><desc>amenity=bank
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander</desc><link href="http://osm.org/browse/node/6164551232"/></wpt><wpt lat="40.4614193" lon="-3.8664886"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/6313090670"/></wpt><wpt lat="40.4059172" lon="-3.8756506"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/6331984182"/></wpt><wpt lat="40.4180163" lon="-3.7042386"><name>Santander</name><desc>amenity=bank
+atm=yes
+name=Santander</desc><link href="http://osm.org/browse/node/6334379598"/></wpt><wpt lat="40.4330294" lon="-3.6936647"><name>node/6370953241</name><desc>amenity=bank
+atm=yes
+brand=Santander</desc><link href="http://osm.org/browse/node/6370953241"/></wpt><wpt lat="40.4102123" lon="-3.7968531"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/6464288811"/></wpt><wpt lat="40.4170031" lon="-3.6743498"><name>Santander</name><desc>addr:city=Madrid
+addr:housenumber=29
+addr:street=Calle del Alcalde Sáinz de Baranda
+amenity=bank
+atm=yes
+name=Santander</desc><link href="http://osm.org/browse/node/6483369659"/></wpt><wpt lat="40.3578865" lon="-3.901941"><name>Santander</name><desc>addr:city=Villaviciosa de Odón
+addr:housenumber=26
+addr:postcode=28670
+addr:street=Calle de las Carretas
+amenity=bank
+atm=yes
+brand=Santander
+brand:wikidata=Q5835668
+brand:wikipedia=en:Santander Bank
+name=Santander
+operator=Santander</desc><link href="http://osm.org/browse/node/6483902369"/></wpt><wpt lat="40.4562196" lon="-3.8658603"><name>Santander</name><desc>amenity=bank
+name=Santander</desc><link href="http://osm.org/browse/node/6922988989"/></wpt><wpt lat="40.4075083" lon="-3.6703909"><name>Santander</name><desc>amenity=bank
+atm=yes
+name=Santander</desc><link href="http://osm.org/browse/node/7235044852"/></wpt></gpx>
