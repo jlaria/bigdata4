@@ -1,0 +1,220 @@
+# Selección de hiperparámetros {#hyperparam}
+
+En esta sección estudiaremos un enfoque moderno a la selección de hyperparámetros en algoritmos 
+supervisados. Nos enfocaremos en el elastic-net, pero los resultados se pueden extender a cualquier algoritmo supervisado soportado por la librería `parsnip`.
+
+
+Comenzamos cargando y preparando los datos. Usaremos unos datos simulados.
+
+```{r, include=FALSE, eval=FALSE}
+library(s2net)
+
+data("auto_mpg")
+datos <- data.frame(
+  rbind(auto_mpg$P2$xL, auto_mpg$P2$xU),
+  y = c(auto_mpg$P2$yL, auto_mpg$P2$yU)
+)
+
+save(datos, file = "data/auto_mpg.RData")
+
+set.seed(0)
+X <- matrix(rnorm(200*1000, mean = 0, sd = 1), ncol = 1000)
+y <- X[,1:5]%*%runif(5, -1, 1) + rnorm(200)
+
+X <- X[, sample(500)]
+datos <- data.frame(X, y = y)
+
+save(datos, file = "data/sim_data.RData")
+```
+
+```{r}
+load("data/sim_data.RData")
+```
+
+Primero vamos a separar los datos en training y test. Esta vez, lo haremos con la librería `rsample`.
+
+```{r}
+library(rsample)
+
+set.seed(0)
+split <- initial_split(datos, prop = 0.5)
+train_data <- training(split)
+test_data <- testing(split)
+```
+
+Para escalar los datos, utilizaremos la librería `recipes`.
+
+```{r}
+library(recipes)
+
+data_rec <- recipe(y~., data = train_data) %>%
+  step_normalize(all_numeric(), -all_outcomes()) %>%
+  prep(train_data)
+
+train_data <- bake(data_rec, train_data)
+test_data <- bake(data_rec, test_data)
+```
+
+
+
+
+A continuación creamos el modelo usando la librería `parsnip`. Podemos especificar los hyper-parámetros ahora o más adelante.
+
+```{r}
+library(parsnip)
+
+model <- linear_reg(penalty = 0.01, mixture = 0.5) %>% #elasticnet
+          set_engine("glmnet")
+```
+
+Para ajustar el modelo, podemos hacer 
+
+```{r}
+model <- fit(model, y~., train_data)
+```
+
+Para obtener predicciones, hacemos
+
+```{r}
+ypred <- predict(model, test_data)
+```
+
+En este caso, podemos calcular el error test usando la librería `yardstick`.
+
+```{r}
+library(yardstick)
+rmse(data.frame(truth = test_data$y, estimate = ypred$.pred), truth, estimate)
+```
+
+## Librerías `tune` y `dials`
+
+Los datos test en la práctica son desconocidos. ¿Cómo sabemos que valores de `penalty` y `mixture` nos darán mejores resultados?
+
+Las librerías `tune` y `dials` nos brindan funcionalidades para seleccionar de forma óptima los hyperparámetros de un modelo.
+
+### Grid search 
+
+Para utilizar grid search, primero creamos el modelo `parsnip`, pero esta vez especificamos que no conocemos los hyper-parámetros óptimos, y los dejamos a la librería `tune` para escoger.
+
+```{r}
+library(tune)
+model <- linear_reg(penalty = tune(), 
+                    mixture = tune()) %>%
+          set_engine("glmnet")
+```
+
+A continuación, creamos las particiones bootstrap para entrenar los diferentes modelos.
+
+```{r}
+train_rs <- bootstraps(train_data, times = 2)
+```
+
+Especificamos qué metrica queremos optimizar, en este caso como es un problema de regresión, minimizaremos el `rmse`. Podemos incluir varias y luego optimizar con respecto a alguna.
+
+```{r}
+metrics <- metric_set(rmse)
+```
+
+Finalmente, creamos el grid de hyper-parámetros los cuales vamos a probar en las diferentes particiones bootstrap.
+
+```{r}
+library(dials)
+params <- parameters( penalty(), mixture() )
+grid <- grid_regular(params, levels = 10)
+```
+Para entrenar los modelos, usamos la función `tune_grid` de la librería `tune`.
+
+```{r}
+
+ctrl <- control_grid(verbose = FALSE)
+
+result <- tune_grid(
+  y~.,
+  model = model,
+  resamples = train_rs,
+  metrics = metrics,
+  control = ctrl,
+  grid = grid
+)
+
+result %>% show_best(maximize = FALSE)
+```
+Podemos evaluar cómo lo hace esta combinación de hyper-parámetros en los datos test.
+
+```{r}
+best_config <- show_best(result, maximize = FALSE)
+model <- linear_reg(penalty = best_config$penalty[1], 
+                    mixture = best_config$mixture[1]) %>%
+          set_engine("glmnet") %>% 
+          fit(y~., train_data)
+ypred <- predict(model, test_data)
+rmse(data.frame(truth = test_data$y, estimate = ypred$.pred), truth, estimate)
+
+```
+
+
+### Random Search
+
+Otro enfoque (superior a grid search) es dejar a `tune` y `dials` escoger los valores de los hiperparámetros para cada iteración. Ambos grid y random search se pueden ejecutar en paralelo.
+
+Para hacer random search procedemos como grid search pero en lugar de especificar un grid, especificamos un número de combinaciones.
+
+```{r}
+model <- linear_reg(penalty = tune(), 
+                    mixture = tune()) %>%
+          set_engine("glmnet")
+
+result <- tune_grid(
+  y~.,
+  model = model,
+  resamples = train_rs,
+  metrics = metrics,
+  control = ctrl,
+  grid = 100
+)
+
+result %>% show_best(maximize = FALSE)
+```
+
+```{r}
+best_config <- show_best(result, maximize = FALSE)
+model <- linear_reg(penalty = best_config$penalty[1], 
+                    mixture = best_config$mixture[1]) %>%
+          set_engine("glmnet") %>% 
+          fit(y~., train_data)
+ypred <- predict(model, test_data)
+rmse(data.frame(truth = test_data$y, estimate = ypred$.pred), truth, estimate)
+```
+
+### Optimización Bayesiana
+
+```{r}
+model <- linear_reg(penalty = tune(), 
+                    mixture = tune()) %>%
+          set_engine("glmnet")
+train_rs <- bootstraps(train_data, times = 10)
+metrics <- metric_set(rmse)
+ctrl <- control_bayes(verbose = FALSE)
+
+result <- tune_bayes(
+  y~., 
+  model = model,
+  resamples = train_rs,
+  metrics = metrics,
+  iter = 100,
+  control = ctrl
+)
+
+result %>% show_best(maximize = FALSE)
+```
+
+
+```{r}
+best_config <- show_best(result, maximize = FALSE)
+model <- linear_reg(penalty = best_config$penalty[1], 
+                    mixture = best_config$mixture[1]) %>%
+          set_engine("glmnet") %>% 
+          fit(y~., train_data)
+ypred <- predict(model, test_data)
+rmse(data.frame(truth = test_data$y, estimate = ypred$.pred), truth, estimate)
+```

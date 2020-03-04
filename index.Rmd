@@ -3,21 +3,70 @@ title: "Introducción al aprendizaje no supervisado"
 author: "Juan C. Laria"
 date: "`r Sys.Date()`"
 knit: "bookdown::render_book"
-documentclass: krantz
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
-link-citations: yes 
-colorlinks: yes
-lot: yes
-lof: yes
-fontsize: 12pt
-monofont: "Source Code Pro"
-monofontoptions: "Scale=0.7"
-site: bookdown::bookdown_site
-url: 'https\://bookdown.org/yihui/bookdown/'
-github-repo: rstudio/bookdown
+link-citations: yes
+github-repo: rstudio/bookdown-demo
 ---
 
-```{r}
-knitr::opts_chunk$set(cache = FALSE, message = F, error = F, warning = F)
+```{r, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(cache = FALSE, message = F, error = F, warning = F, eval = TRUE)
 ```
+
+# Introducción {-}
+
+Utilizaremos los datos de @weber1974structure sobre consumo de proteínas en los países europeos en la década de los '70 del pasado siglo.
+
+Comenzamos por cargar los datos en **R**.
+
+```{r}
+data.protein = read.csv("data/protein.csv")
+```
+
+En este caso, el archivo que queremos importar en **R** se encuentra en un recurso web, en lugar de la ruta local usual. Una vez importados los datos, podemos ver de qué se tratan.
+
+```{r, message=F}
+library(dplyr)
+library(magrittr)
+
+data.protein %>% head
+```
+
+
+```{r}
+dim(data.protein)
+```
+
+Tenemos 25 países y 10 variables, aunque una de estas variables es `Country`, que contiene el identificador de cada fila. Debemos transformar este dataset para deshacernos de la columna `Country` sin perder la información de las filas. Esto lo hacemos con el comando `rownames` (que es de lectura y asignación).
+
+```{r}
+rownames(data.protein)
+```
+
+```{r}
+rownames(data.protein) = data.protein$Country
+```
+
+Si ahora vemos nuestro dataset, observamos que la información de la variable `Country` está repetida en los nombres de las filas.
+
+```{r}
+data.protein %>% head
+```
+
+Por tanto, podemos eliminar esa columna
+
+```{r}
+data.protein$Country = NULL
+```
+
+Como podemos observar, aunque posiblemente las variables estén medidas en las mismas unidades, no se encuentran en el mismo rango de valores. Por ejemplo, `Cereals` toma valores altos comparada con el resto. Para evitar que la escala individual de las variables afecten el resultado final, escalamos previamente la matriz de datos.
+
+
+```{r}
+data.protein %<>% scale %>% as.data.frame
+data.protein %>% head
+```
+

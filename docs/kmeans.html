@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 1 Clústers partitivos | Introducción al aprendizaje no supervisado</title>
+  <meta name="description" content="Capítulo 1 Clústers partitivos | Introducción al aprendizaje no supervisado" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 1 Clústers partitivos | Introducción al aprendizaje no supervisado" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 1 Clústers partitivos | Introducción al aprendizaje no supervisado" />
+  
+  
+  
+
+<meta name="author" content="Juan C. Laria" />
+
+
+<meta name="date" content="2020-03-04" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="clústers-jerárquicos.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/plotly-binding-4.9.2/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Aprendizaje no supervisado</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introducción</a></li>
+<li class="chapter" data-level="1" data-path="kmeans.html"><a href="kmeans.html"><i class="fa fa-check"></i><b>1</b> Clústers partitivos</a><ul>
+<li class="chapter" data-level="1.1" data-path="kmeans.html"><a href="kmeans.html#k-medias"><i class="fa fa-check"></i><b>1.1</b> K medias</a></li>
+<li class="chapter" data-level="1.2" data-path="kmeans.html"><a href="kmeans.html#librería-factoextra"><i class="fa fa-check"></i><b>1.2</b> Librería <code>factoextra</code></a></li>
+<li class="chapter" data-level="1.3" data-path="kmeans.html"><a href="kmeans.html#variación-de-información"><i class="fa fa-check"></i><b>1.3</b> Variación de información</a></li>
+<li class="chapter" data-level="1.4" data-path="kmeans.html"><a href="kmeans.html#minibatch-kmeans"><i class="fa fa-check"></i><b>1.4</b> Minibatch kmeans</a></li>
+<li class="chapter" data-level="1.5" data-path="kmeans.html"><a href="kmeans.html#k-mediano"><i class="fa fa-check"></i><b>1.5</b> K mediano</a><ul>
+<li class="chapter" data-level="1.5.1" data-path="kmeans.html"><a href="kmeans.html#custerrclara"><i class="fa fa-check"></i><b>1.5.1</b> <code>CusterR::clara</code></a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="kmeans.html"><a href="kmeans.html#selección-de-k"><i class="fa fa-check"></i><b>1.6</b> Selección de K</a><ul>
+<li class="chapter" data-level="1.6.1" data-path="kmeans.html"><a href="kmeans.html#método-del-codo"><i class="fa fa-check"></i><b>1.6.1</b> Método del codo</a></li>
+<li class="chapter" data-level="1.6.2" data-path="kmeans.html"><a href="kmeans.html#método-average-silhouette"><i class="fa fa-check"></i><b>1.6.2</b> Método average silhouette</a></li>
+<li class="chapter" data-level="1.6.3" data-path="kmeans.html"><a href="kmeans.html#método-gap-statistic"><i class="fa fa-check"></i><b>1.6.3</b> Método Gap statistic</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="clústers-jerárquicos.html"><a href="clústers-jerárquicos.html"><i class="fa fa-check"></i><b>2</b> Clústers jerárquicos</a><ul>
+<li class="chapter" data-level="2.1" data-path="clústers-jerárquicos.html"><a href="clústers-jerárquicos.html#hclust"><i class="fa fa-check"></i><b>2.1</b> <code>hclust</code></a><ul>
+<li class="chapter" data-level="2.1.1" data-path="clústers-jerárquicos.html"><a href="clústers-jerárquicos.html#distancias.-qué-hace-la-función-dist"><i class="fa fa-check"></i><b>2.1.1</b> Distancias. ¿Qué hace la función <code>dist</code>?</a></li>
+<li class="chapter" data-level="2.1.2" data-path="clústers-jerárquicos.html"><a href="clústers-jerárquicos.html#linkages.-qué-especifica-el-parámetro-method-en-la-función-hclust"><i class="fa fa-check"></i><b>2.1.2</b> Linkages. ¿Qué especifica el parámetro <code>method</code> en la función <code>hclust</code>?</a></li>
+<li class="chapter" data-level="2.1.3" data-path="clústers-jerárquicos.html"><a href="clústers-jerárquicos.html#los-métodos-cutree-y-rect.hclust"><i class="fa fa-check"></i><b>2.1.3</b> Los métodos <code>cutree</code> y <code>rect.hclust</code></a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="clústers-jerárquicos.html"><a href="clústers-jerárquicos.html#librería-protoclust"><i class="fa fa-check"></i><b>2.2</b> Librería <code>protoclust</code></a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="som.html"><a href="som.html"><i class="fa fa-check"></i><b>3</b> Self Organizing Maps</a><ul>
+<li class="chapter" data-level="3.1" data-path="som.html"><a href="som.html#librería-kohonen"><i class="fa fa-check"></i><b>3.1</b> Librería <code>kohonen</code></a><ul>
+<li class="chapter" data-level="3.1.1" data-path="som.html"><a href="som.html#u-matrix"><i class="fa fa-check"></i><b>3.1.1</b> U-Matrix</a></li>
+<li class="chapter" data-level="3.1.2" data-path="som.html"><a href="som.html#clusters"><i class="fa fa-check"></i><b>3.1.2</b> Clusters</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="clústers-basados-en-densidades.html"><a href="clústers-basados-en-densidades.html"><i class="fa fa-check"></i><b>4</b> Clústers basados en densidades</a><ul>
+<li class="chapter" data-level="4.1" data-path="clústers-basados-en-densidades.html"><a href="clústers-basados-en-densidades.html#librería-dbscan"><i class="fa fa-check"></i><b>4.1</b> Librería <code>dbscan</code></a><ul>
+<li class="chapter" data-level="4.1.1" data-path="clústers-basados-en-densidades.html"><a href="clústers-basados-en-densidades.html#cómo-funciona"><i class="fa fa-check"></i><b>4.1.1</b> ¿Cómo funciona?</a></li>
+<li class="chapter" data-level="4.1.2" data-path="clústers-basados-en-densidades.html"><a href="clústers-basados-en-densidades.html#ventajas"><i class="fa fa-check"></i><b>4.1.2</b> Ventajas</a></li>
+<li class="chapter" data-level="4.1.3" data-path="clústers-basados-en-densidades.html"><a href="clústers-basados-en-densidades.html#utilización"><i class="fa fa-check"></i><b>4.1.3</b> Utilización</a></li>
+<li class="chapter" data-level="4.1.4" data-path="clústers-basados-en-densidades.html"><a href="clústers-basados-en-densidades.html#determinando-el-eps-óptimo."><i class="fa fa-check"></i><b>4.1.4</b> Determinando el <code>eps</code> óptimo.</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="aprendizaje-semi-supervisado.html"><a href="aprendizaje-semi-supervisado.html"><i class="fa fa-check"></i><b>5</b> Aprendizaje semi-supervisado</a><ul>
+<li class="chapter" data-level="5.1" data-path="aprendizaje-semi-supervisado.html"><a href="aprendizaje-semi-supervisado.html#librería-s2net"><i class="fa fa-check"></i><b>5.1</b> Librería <code>s2net</code></a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="hyperparam.html"><a href="hyperparam.html"><i class="fa fa-check"></i><b>6</b> Selección de hiperparámetros</a><ul>
+<li class="chapter" data-level="6.1" data-path="hyperparam.html"><a href="hyperparam.html#librerías-tune-y-dials"><i class="fa fa-check"></i><b>6.1</b> Librerías <code>tune</code> y <code>dials</code></a><ul>
+<li class="chapter" data-level="6.1.1" data-path="hyperparam.html"><a href="hyperparam.html#grid-search"><i class="fa fa-check"></i><b>6.1.1</b> Grid search</a></li>
+<li class="chapter" data-level="6.1.2" data-path="hyperparam.html"><a href="hyperparam.html#random-search"><i class="fa fa-check"></i><b>6.1.2</b> Random Search</a></li>
+<li class="chapter" data-level="6.1.3" data-path="hyperparam.html"><a href="hyperparam.html#optimización-bayesiana"><i class="fa fa-check"></i><b>6.1.3</b> Optimización Bayesiana</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introducción al aprendizaje no supervisado</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="kmeans" class="section level1">
+<h1><span class="header-section-number">Capítulo 1</span> Clústers partitivos</h1>
+<div id="k-medias" class="section level2">
+<h2><span class="header-section-number">1.1</span> K medias</h2>
+<p><em>K-means</em> es, probablemente, uno de los algoritmos de clúster más eficientes computacionalmente. Sin embargo, tiene dos desventajas fundamentales.</p>
+<ol style="list-style-type: decimal">
+<li>Se considera únicamente la distancia euclídea.</li>
+<li>Hay que especificar desde el comienzo el número de clusters que queremos.</li>
+</ol>
+<p>El funcionamiento de este algoritmo se ilustra <a href="https://www.naftaliharris.com/blog/visualizing-k-means-clustering/">aquí</a>.</p>
+<p>Para hacer k-medias en R utilizamos la función <code>kmeans</code> del paquete base <code>stats</code>. En este caso, especificaremos 5 clusters.</p>
+<!-- ```{r} -->
+<!-- data.protein = read.csv("data/protein.csv") -->
+<!-- rownames(data.protein) = data.protein$Country -->
+<!-- data.protein$Country = NULL -->
+<!-- data.protein = as.data.frame(scale(data.protein)) -->
+<!-- ``` -->
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" title="1">km =<span class="st"> </span><span class="kw">kmeans</span>(data.protein, <span class="dt">centers =</span> <span class="dv">5</span>)</a>
+<a class="sourceLine" id="cb14-2" title="2">km<span class="op">$</span>cluster </a></code></pre></div>
+<pre><code>##        Albania        Austria        Belgium       Bulgaria Czechoslovakia 
+##              1              2              2              1              3 
+##        Denmark      E Germany        Finland         France         Greece 
+##              5              3              4              2              1 
+##        Hungary        Ireland          Italy    Netherlands         Norway 
+##              3              2              1              2              5 
+##         Poland       Portugal        Romania          Spain         Sweden 
+##              3              1              1              1              5 
+##    Switzerland             UK           USSR      W Germany     Yugoslavia 
+##              2              2              3              2              1</code></pre>
+<p>Como vemos, la función <code>kmeans</code> devuelve una agrupación, de hecho, <code>km$cluster</code> tiene una estructura que comparten todos los algoritmos de agrupación (observación, clúster).</p>
+</div>
+<div id="librería-factoextra" class="section level2">
+<h2><span class="header-section-number">1.2</span> Librería <code>factoextra</code></h2>
+<p><code>factoextra</code> es un paquete para extraer y visualizar las salidas de distintos análisis exploratorios en R.
+<!-- Para instalarlo desde [github](https://github.com/kassambara/factoextra), primero necesitamos instalar la librería `devtools`. -->
+Para visualizar los grupos resultantes, podemos utilizar la función <code>fviz_cluster</code> de la librería <code>factoextra</code>. Esta función visualizará los datos utilizando las dos primeras componentes principales.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" title="1"><span class="kw">library</span>(factoextra)</a>
+<a class="sourceLine" id="cb16-2" title="2"><span class="kw">fviz_cluster</span>(km, <span class="dt">data=</span>data.protein, <span class="dt">labelsize =</span> <span class="dv">8</span>)</a></code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb17-1" title="1"> <span class="co"># Interactivo</span></a>
+<a class="sourceLine" id="cb17-2" title="2"><span class="kw">library</span>(plotly)</a>
+<a class="sourceLine" id="cb17-3" title="3"><span class="kw">fviz_cluster</span>(km, <span class="dt">data=</span>data.protein, <span class="dt">labelsize =</span> <span class="dv">8</span>)<span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb17-4" title="4"><span class="kw">ggplotly</span>()</a></code></pre></div>
+<div id="htmlwidget-3a8e2ff6d69ac0ee2739" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3a8e2ff6d69ac0ee2739">{"x":{"data":[{"x":[3.48536733803569,3.1340813249801,2.2396999705894,1.53456534417977,1.70585398039547,2.75681237688209,1.31180743861256,3.62300765894619],"y":[-1.63047984905732,-1.30106563113335,1.00105887372566,0.398987082049839,4.28893399389378,-1.11878535725143,2.5535241605278,-1.03802883431357],"text":["cluster: 1<br />cluster: 1<br />x:  3.4853673<br />y: -1.63047985<br />x:  3.4853673<br />y: -1.63047985","cluster: 1<br />cluster: 1<br />x:  3.1340813<br />y: -1.30106563<br />x:  3.1340813<br />y: -1.30106563","cluster: 1<br />cluster: 1<br />x:  2.2397000<br />y:  1.00105887<br />x:  2.2397000<br />y:  1.00105887","cluster: 1<br />cluster: 1<br />x:  1.5345653<br />y:  0.39898708<br />x:  1.5345653<br />y:  0.39898708","cluster: 1<br />cluster: 1<br />x:  1.7058540<br />y:  4.28893399<br />x:  1.7058540<br />y:  4.28893399","cluster: 1<br />cluster: 1<br />x:  2.7568124<br />y: -1.11878536<br />x:  2.7568124<br />y: -1.11878536","cluster: 1<br />cluster: 1<br />x:  1.3118074<br />y:  2.55352416<br />x:  1.3118074<br />y:  2.55352416","cluster: 1<br />cluster: 1<br />x:  3.6230077<br />y: -1.03802883<br />x:  3.6230077<br />y: -1.03802883"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","opacity":1,"size":5.66929133858268,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"1","legendgroup":"1","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-1.42266939484387,-1.62203234612571,-1.48798241431294,-2.66347752828815,-1.64144542488955,-0.912318158672258,-1.73536818816162,-2.0938352601796],"y":[-1.04123129738998,0.159495574416851,0.785365170060313,-0.763706481897823,-0.91199088809436,-0.751058650057851,-0.0939794364690162,-0.293779006640775],"text":["cluster: 2<br />cluster: 2<br />x: -1.4226694<br />y: -1.04123130<br />x: -1.4226694<br />y: -1.04123130","cluster: 2<br />cluster: 2<br />x: -1.6220323<br />y:  0.15949557<br />x: -1.6220323<br />y:  0.15949557","cluster: 2<br />cluster: 2<br />x: -1.4879824<br />y:  0.78536517<br />x: -1.4879824<br />y:  0.78536517","cluster: 2<br />cluster: 2<br />x: -2.6634775<br />y: -0.76370648<br />x: -2.6634775<br />y: -0.76370648","cluster: 2<br />cluster: 2<br />x: -1.6414454<br />y: -0.91199089<br />x: -1.6414454<br />y: -0.91199089","cluster: 2<br />cluster: 2<br />x: -0.9123182<br />y: -0.75105865<br />x: -0.9123182<br />y: -0.75105865","cluster: 2<br />cluster: 2<br />x: -1.7353682<br />y: -0.09397944<br />x: -1.7353682<br />y: -0.09397944","cluster: 2<br />cluster: 2<br />x: -2.0938353<br />y: -0.29377901<br />x: -2.0938353<br />y: -0.29377901"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(163,165,0,1)","opacity":1,"size":5.66929133858268,"symbol":"triangle-up","line":{"width":1.88976377952756,"color":"rgba(163,165,0,1)"}},"hoveron":"points","name":"(2,1)","legendgroup":"(2,1)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-0.37046463257667,-1.42221084633617,1.45743978727323,-0.121869522623461,0.782596527429521],"y":[-0.602668418443061,0.450300853135581,-0.815951145896587,0.531741940252775,-0.110770144359191],"text":["cluster: 3<br />cluster: 3<br />x: -0.3704646<br />y: -0.60266842<br />x: -0.3704646<br />y: -0.60266842","cluster: 3<br />cluster: 3<br />x: -1.4222108<br />y:  0.45030085<br />x: -1.4222108<br />y:  0.45030085","cluster: 3<br />cluster: 3<br />x:  1.4574398<br />y: -0.81595115<br />x:  1.4574398<br />y: -0.81595115","cluster: 3<br />cluster: 3<br />x: -0.1218695<br />y:  0.53174194<br />x: -0.1218695<br />y:  0.53174194","cluster: 3<br />cluster: 3<br />x:  0.7825965<br />y: -0.11077014<br />x:  0.7825965<br />y: -0.11077014"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,191,125,1)","opacity":1,"size":5.66929133858268,"symbol":"square","line":{"width":1.88976377952756,"color":"rgba(0,191,125,1)"}},"hoveron":"points","name":"(3,1)","legendgroup":"(3,1)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-1.56385634688227],"y":[-0.596002547386881],"text":"cluster: 4<br />cluster: 4<br />x: -1.5638563<br />y: -0.59600255<br />x: -1.5638563<br />y: -0.59600255","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,176,246,1)","opacity":1,"size":5.66929133858268,"symbol":"cross-thin-open","line":{"width":1.88976377952756,"color":"rgba(0,176,246,1)"}},"hoveron":"points","name":"(4,1)","legendgroup":"(4,1)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-2.36526881368191,-0.974702915211394,-1.63372995453846],"y":[0.285445823667857,0.82202867055131,-0.207384453890574],"text":["cluster: 5<br />cluster: 5<br />x: -2.3652688<br />y:  0.28544582<br />x: -2.3652688<br />y:  0.28544582","cluster: 5<br />cluster: 5<br />x: -0.9747029<br />y:  0.82202867<br />x: -0.9747029<br />y:  0.82202867","cluster: 5<br />cluster: 5<br />x: -1.6337300<br />y: -0.20738445<br />x: -1.6337300<br />y: -0.20738445"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(231,107,243,1)","opacity":1,"size":5.66929133858268,"symbol":"square-x-open","line":{"width":1.88976377952756,"color":"rgba(231,107,243,1)"}},"hoveron":"points","name":"(5,1)","legendgroup":"(5,1)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.62300765894619,3.48536733803569,2.75681237688209,1.53456534417977,1.31180743861256,1.70585398039547,3.62300765894619],"y":[-1.03802883431357,-1.63047984905732,-1.11878535725143,0.398987082049839,2.5535241605278,4.28893399389378,-1.03802883431357],"text":"cluster: 1<br />cluster: 1","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(248,118,109,0.2)","dash":"solid"},"fill":"toself","fillcolor":"rgba(248,118,109,0.2)","hoveron":"fills","name":"1","legendgroup":"1","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-0.912318158672258,-1.42266939484387,-2.66347752828815,-1.48798241431294,-0.912318158672258],"y":[-0.751058650057851,-1.04123129738998,-0.763706481897823,0.785365170060313,-0.751058650057851],"text":"cluster: 2<br />cluster: 2","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(163,165,0,0.2)","dash":"solid"},"fill":"toself","fillcolor":"rgba(163,165,0,0.2)","hoveron":"fills","name":"(2,1)","legendgroup":"(2,1)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.782596527429521,1.45743978727323,-0.37046463257667,-1.42221084633617,-0.121869522623461,0.782596527429521],"y":[-0.110770144359191,-0.815951145896587,-0.602668418443061,0.450300853135581,0.531741940252775,-0.110770144359191],"text":"cluster: 3<br />cluster: 3","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(0,191,125,0.2)","dash":"solid"},"fill":"toself","fillcolor":"rgba(0,191,125,0.2)","hoveron":"fills","name":"(3,1)","legendgroup":"(3,1)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-1.56385634688227,-1.56385634688227],"y":[-0.596002547386881,-0.596002547386881],"text":"cluster: 4<br />cluster: 4","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(0,176,246,0.2)","dash":"solid"},"fill":"toself","fillcolor":"rgba(0,176,246,0.2)","hoveron":"fills","name":"(4,1)","legendgroup":"(4,1)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-1.63372995453846,-2.36526881368191,-0.974702915211394,-1.63372995453846],"y":[-0.207384453890574,0.285445823667857,0.82202867055131,-0.207384453890574],"text":"cluster: 5<br />cluster: 5","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(231,107,243,0.2)","dash":"solid"},"fill":"toself","fillcolor":"rgba(231,107,243,0.2)","hoveron":"fills","name":"(5,1)","legendgroup":"(5,1)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.47389942907766],"y":[0.394268054805177],"text":"cluster: 1<br />cluster: 1<br />x:        NA<br />y:         NA","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","opacity":1,"size":11.3385826771654,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"1","legendgroup":"1","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-1.69739108943421],"y":[-0.363860627009081],"text":"cluster: 2<br />cluster: 2<br />x:        NA<br />y:         NA","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(163,165,0,1)","opacity":1,"size":11.3385826771654,"symbol":"triangle-up","line":{"width":1.88976377952756,"color":"rgba(163,165,0,1)"}},"hoveron":"points","name":"(2,1)","legendgroup":"(2,1)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.0650982626332905],"y":[-0.109469383062097],"text":"cluster: 3<br />cluster: 3<br />x:        NA<br />y:         NA","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,191,125,1)","opacity":1,"size":11.3385826771654,"symbol":"square","line":{"width":1.88976377952756,"color":"rgba(0,191,125,1)"}},"hoveron":"points","name":"(3,1)","legendgroup":"(3,1)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-1.56385634688227],"y":[-0.596002547386881],"text":"cluster: 4<br />cluster: 4<br />x: -1.563856<br />y: -0.5960025","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,176,246,1)","opacity":1,"size":11.3385826771654,"symbol":"cross-thin-open","line":{"width":1.88976377952756,"color":"rgba(0,176,246,1)"}},"hoveron":"points","name":"(4,1)","legendgroup":"(4,1)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-1.65790056114392],"y":[0.300030013442864],"text":"cluster: 5<br />cluster: 5<br />x:        NA<br />y:         NA","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(231,107,243,1)","opacity":1,"size":11.3385826771654,"symbol":"square-x-open","line":{"width":1.88976377952756,"color":"rgba(231,107,243,1)"}},"hoveron":"points","name":"(5,1)","legendgroup":"(5,1)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.48536733803569,3.1340813249801,2.2396999705894,1.53456534417977,1.70585398039547,2.75681237688209,1.31180743861256,3.62300765894619],"y":[-1.63047984905732,-1.30106563113335,1.00105887372566,0.398987082049839,4.28893399389378,-1.11878535725143,2.5535241605278,-1.03802883431357],"text":["Albania","Bulgaria","Greece","Italy","Portugal","Romania","Spain","Yugoslavia"],"hovertext":["cluster: 1<br />name: Albania<br />x:  3.4853673<br />y: -1.63047985<br />x:  3.4853673<br />y: -1.63047985","cluster: 1<br />name: Bulgaria<br />x:  3.1340813<br />y: -1.30106563<br />x:  3.1340813<br />y: -1.30106563","cluster: 1<br />name: Greece<br />x:  2.2397000<br />y:  1.00105887<br />x:  2.2397000<br />y:  1.00105887","cluster: 1<br />name: Italy<br />x:  1.5345653<br />y:  0.39898708<br />x:  1.5345653<br />y:  0.39898708","cluster: 1<br />name: Portugal<br />x:  1.7058540<br />y:  4.28893399<br />x:  1.7058540<br />y:  4.28893399","cluster: 1<br />name: Romania<br />x:  2.7568124<br />y: -1.11878536<br />x:  2.7568124<br />y: -1.11878536","cluster: 1<br />name: Spain<br />x:  1.3118074<br />y:  2.55352416<br />x:  1.3118074<br />y:  2.55352416","cluster: 1<br />name: Yugoslavia<br />x:  3.6230077<br />y: -1.03802883<br />x:  3.6230077<br />y: -1.03802883"],"textfont":{"size":10.0787401574803,"color":"rgba(248,118,109,1)"},"type":"scatter","mode":"text","hoveron":"points","name":"(1,NA)","legendgroup":"(1,NA)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-1.42266939484387,-1.62203234612571,-1.48798241431294,-2.66347752828815,-1.64144542488955,-0.912318158672258,-1.73536818816162,-2.0938352601796],"y":[-1.04123129738998,0.159495574416851,0.785365170060313,-0.763706481897823,-0.91199088809436,-0.751058650057851,-0.0939794364690162,-0.293779006640775],"text":["Austria","Belgium","France","Ireland","Netherlands","Switzerland","UK","W Germany"],"hovertext":["cluster: 2<br />name: Austria<br />x: -1.4226694<br />y: -1.04123130<br />x: -1.4226694<br />y: -1.04123130","cluster: 2<br />name: Belgium<br />x: -1.6220323<br />y:  0.15949557<br />x: -1.6220323<br />y:  0.15949557","cluster: 2<br />name: France<br />x: -1.4879824<br />y:  0.78536517<br />x: -1.4879824<br />y:  0.78536517","cluster: 2<br />name: Ireland<br />x: -2.6634775<br />y: -0.76370648<br />x: -2.6634775<br />y: -0.76370648","cluster: 2<br />name: Netherlands<br />x: -1.6414454<br />y: -0.91199089<br />x: -1.6414454<br />y: -0.91199089","cluster: 2<br />name: Switzerland<br />x: -0.9123182<br />y: -0.75105865<br />x: -0.9123182<br />y: -0.75105865","cluster: 2<br />name: UK<br />x: -1.7353682<br />y: -0.09397944<br />x: -1.7353682<br />y: -0.09397944","cluster: 2<br />name: W Germany<br />x: -2.0938353<br />y: -0.29377901<br />x: -2.0938353<br />y: -0.29377901"],"textfont":{"size":10.0787401574803,"color":"rgba(163,165,0,1)"},"type":"scatter","mode":"text","hoveron":"points","name":"(2,1,NA)","legendgroup":"(2,1,NA)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-0.37046463257667,-1.42221084633617,1.45743978727323,-0.121869522623461,0.782596527429521],"y":[-0.602668418443061,0.450300853135581,-0.815951145896587,0.531741940252775,-0.110770144359191],"text":["Czechoslovakia","E Germany","Hungary","Poland","USSR"],"hovertext":["cluster: 3<br />name: Czechoslovakia<br />x: -0.3704646<br />y: -0.60266842<br />x: -0.3704646<br />y: -0.60266842","cluster: 3<br />name: E Germany<br />x: -1.4222108<br />y:  0.45030085<br />x: -1.4222108<br />y:  0.45030085","cluster: 3<br />name: Hungary<br />x:  1.4574398<br />y: -0.81595115<br />x:  1.4574398<br />y: -0.81595115","cluster: 3<br />name: Poland<br />x: -0.1218695<br />y:  0.53174194<br />x: -0.1218695<br />y:  0.53174194","cluster: 3<br />name: USSR<br />x:  0.7825965<br />y: -0.11077014<br />x:  0.7825965<br />y: -0.11077014"],"textfont":{"size":10.0787401574803,"color":"rgba(0,191,125,1)"},"type":"scatter","mode":"text","hoveron":"points","name":"(3,1,NA)","legendgroup":"(3,1,NA)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-1.56385634688227],"y":[-0.596002547386881],"text":"Finland","hovertext":"cluster: 4<br />name: Finland<br />x: -1.5638563<br />y: -0.59600255<br />x: -1.5638563<br />y: -0.59600255","textfont":{"size":10.0787401574803,"color":"rgba(0,176,246,1)"},"type":"scatter","mode":"text","hoveron":"points","name":"(4,1,NA)","legendgroup":"(4,1,NA)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-2.36526881368191,-0.974702915211394,-1.63372995453846],"y":[0.285445823667857,0.82202867055131,-0.207384453890574],"text":["Denmark","Norway","Sweden"],"hovertext":["cluster: 5<br />name: Denmark<br />x: -2.3652688<br />y:  0.28544582<br />x: -2.3652688<br />y:  0.28544582","cluster: 5<br />name: Norway<br />x: -0.9747029<br />y:  0.82202867<br />x: -0.9747029<br />y:  0.82202867","cluster: 5<br />name: Sweden<br />x: -1.6337300<br />y: -0.20738445<br />x: -1.6337300<br />y: -0.20738445"],"textfont":{"size":10.0787401574803,"color":"rgba(231,107,243,1)"},"type":"scatter","mode":"text","hoveron":"points","name":"(5,1,NA)","legendgroup":"(5,1,NA)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":43.7625570776256,"r":7.30593607305936,"b":40.1826484018265,"l":31.4155251141553},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"title":{"text":"Cluster plot","font":{"color":"rgba(0,0,0,1)","family":"","size":17.5342465753425},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-2.97780178764986,3.9373319183079],"tickmode":"array","ticktext":["-2","0","2"],"tickvals":[-2,0,2],"categoryorder":"array","categoryarray":["-2","0","2"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Dim1 (44.5%)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-1.92645054120488,4.58490468604134],"tickmode":"array","ticktext":["0","2","4"],"tickvals":[0,2,4],"categoryorder":"array","categoryarray":["0","2","4"],"nticks":null,"ticks":"outside","tickcolor":"rgba(0,0,0,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Dim2 (18.2%)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895},"y":0.96751968503937},"annotations":[{"text":"cluster","x":1.02,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"left","yanchor":"bottom","legendTitle":true}],"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"359e25e61081":{"colour":{},"shape":{},"x":{},"y":{},"x.1":{},"y.1":{},"type":"scatter"},"359e64ad7bdd":{"colour":{},"fill":{},"x":{},"y":{}},"359e30556375":{"colour":{},"shape":{},"x":{},"y":{}},"359e248c7f6a":{"colour":{},"label":{},"x":{},"y":{},"x.1":{},"y.1":{}}},"cur_data":"359e25e61081","visdat":{"359e25e61081":["function (y) ","x"],"359e64ad7bdd":["function (y) ","x"],"359e30556375":["function (y) ","x"],"359e248c7f6a":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="variación-de-información" class="section level2">
+<h2><span class="header-section-number">1.3</span> Variación de información</h2>
+<p>¿Cómo podríamos medir cuán diferentes son dos agrupaciones dadas sobre los mismos datos? Por ejemplo, la salida de <code>km$cluster</code> escalando y sin escalar los datos.</p>
+<p>La <em>variación de información</em> proporciona una medida para decir cuánta información comparten (o en este caso, no comparten) dos particiones de los datos. De hecho, es una distancia en el sentido matemático estricto de distancia.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" title="1">cluster_scale &lt;-<span class="st"> </span>km<span class="op">$</span>cluster</a>
+<a class="sourceLine" id="cb18-2" title="2"></a>
+<a class="sourceLine" id="cb18-3" title="3"><span class="co"># Repetimos el mismo análisis pero sin escalar</span></a>
+<a class="sourceLine" id="cb18-4" title="4">data.protein =<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/protein.csv&quot;</span>)</a>
+<a class="sourceLine" id="cb18-5" title="5"><span class="kw">rownames</span>(data.protein) =<span class="st"> </span>data.protein<span class="op">$</span>Country</a>
+<a class="sourceLine" id="cb18-6" title="6">data.protein<span class="op">$</span>Country =<span class="st"> </span><span class="ot">NULL</span></a>
+<a class="sourceLine" id="cb18-7" title="7">km =<span class="st"> </span><span class="kw">kmeans</span>(data.protein, <span class="dt">centers =</span> <span class="dv">5</span>)</a>
+<a class="sourceLine" id="cb18-8" title="8"></a>
+<a class="sourceLine" id="cb18-9" title="9">cluster_no_scale &lt;-<span class="st"> </span>km<span class="op">$</span>cluster</a></code></pre></div>
+<p>El paquete <code>mcclust</code> incluye una función para calcular la variación de información.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb19-1" title="1"><span class="kw">library</span>(mcclust)</a>
+<a class="sourceLine" id="cb19-2" title="2"><span class="kw">vi.dist</span>(cluster_scale, cluster_no_scale, <span class="dt">parts =</span> <span class="ot">TRUE</span>)</a></code></pre></div>
+<pre><code>##        vi    H(1|2)    H(2|1) 
+## 1.5843856 0.8105865 0.7737991</code></pre>
+<p>¿ Con una agrupación aleatoria qué obtendríamos ?</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb21-1" title="1">cluster_rand &lt;-<span class="st"> </span><span class="kw">sample</span>(<span class="dv">5</span>, <span class="kw">length</span>(cluster_scale), <span class="dt">replace =</span> <span class="ot">TRUE</span>)</a>
+<a class="sourceLine" id="cb21-2" title="2"></a>
+<a class="sourceLine" id="cb21-3" title="3"><span class="kw">vi.dist</span>(cluster_rand, cluster_scale)</a></code></pre></div>
+<pre><code>## [1] 3.419358</code></pre>
+</div>
+<div id="minibatch-kmeans" class="section level2">
+<h2><span class="header-section-number">1.4</span> Minibatch kmeans</h2>
+<p><em>MiniBatch k-means</em> ha sido propuesto como una alternativa al algoritmo <em>k-means</em> para agrupar datos masivos. La ventaja de <em>MiniBatch k-means</em> es que reduce el coste computacional al no utilizar todos los datos en cada iteración, sino una muestra aleatoria de tamaño fijo.</p>
+<p>En esta sección ilustraremos el uso de <em>MiniBatch k-means</em> en segmentación de imágenes (<em>Color Quantization</em>). Utilizaremos las librerías de R <code>ClusterR</code> para el algoritmo, y <code>OpenImageR</code> para representar las imágenes.</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" title="1"><span class="kw">library</span>(ClusterR)</a>
+<a class="sourceLine" id="cb23-2" title="2"><span class="kw">library</span>(OpenImageR)</a></code></pre></div>
+<p>En este ejemplo utilizaremos una imagen de arte rupestre. Primero descargamos y leemos la imagen.</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb24-1" title="1">img =<span class="st"> </span><span class="kw">readImage</span>(<span class="st">&quot;data/beach.png&quot;</span>)</a>
+<a class="sourceLine" id="cb24-2" title="2"><span class="kw">dim</span>(img)</a></code></pre></div>
+<pre><code>## [1] 299 299   3</code></pre>
+<p>Podemos observar que la imagen tiene una resolución de 299, 299, 3 píxeles, separados en tres canales de colores (RGB), por lo que en realidad tenemos 8.940110^{4} datos y <code>3</code> variables. Para mostrar la imagen en pantalla utilizamos la función <code>imageShow</code>.</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb26-1" title="1"><span class="kw">imageShow</span>(img)</a></code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb27-1" title="1"><span class="co"># img &lt;- RGB_to_HSV(img)</span></a></code></pre></div>
+<p>A continuación, convertimos nuestra matriz <code>381x514x3</code> en otra matriz de dimensión <code>195834x3</code>.</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb28-1" title="1">img.vector =<span class="st"> </span><span class="kw">apply</span>(img, <span class="dv">3</span>, as.vector)</a>
+<a class="sourceLine" id="cb28-2" title="2"><span class="kw">dim</span>(img.vector)</a></code></pre></div>
+<pre><code>## [1] 89401     3</code></pre>
+<p>Ya estamos en condiciones de hacer MiniBatch K-means a nuestra imagen.</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb30-1" title="1">mbkm =<span class="st"> </span><span class="kw">MiniBatchKmeans</span>(img.vector, <span class="dt">clusters =</span> <span class="dv">3</span>)</a></code></pre></div>
+<p>A continuación, vamos a sustituir la información de cada píxel por el centro del clúster al que pertenece. De esta forma obtendremos una imagen que tiene solamente 10 colores.</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb31-1" title="1">mb.pred =<span class="st"> </span><span class="kw">predict_MBatchKMeans</span>(img.vector, mbkm<span class="op">$</span>centroids)</a>
+<a class="sourceLine" id="cb31-2" title="2">new.img =<span class="st"> </span>mbkm<span class="op">$</span>centroids[mb.pred, ] </a></code></pre></div>
+<p>Devolvemos la imagen a su estructura original para poderla representar.</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" title="1"><span class="kw">dim</span>(new.img) =<span class="st"> </span><span class="kw">c</span>(<span class="kw">nrow</span>(img), <span class="kw">ncol</span>(img), <span class="dv">3</span>) </a>
+<a class="sourceLine" id="cb32-2" title="2"><span class="kw">imageShow</span>(new.img)</a></code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+</div>
+<div id="k-mediano" class="section level2">
+<h2><span class="header-section-number">1.5</span> K mediano</h2>
+<p><em>Partition around medoids</em> puede verse como una versión robusta de <em>kmeans</em>, ya que los centroides son observaciones en lugar de promedios de observaciones. Esto da lugar a clusters más interpretables. Adicionalmente, su implementación tiene ventajas con respecto a <em>kmeans</em>, por ejemplo, no se limita a la distancia euclídea.</p>
+<p>Para este algoritmo, utilizaremos la función <code>pam</code> de la librería <code>cluster</code>.</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb33-1" title="1"><span class="kw">library</span>(cluster)</a>
+<a class="sourceLine" id="cb33-2" title="2">pm =<span class="st"> </span><span class="kw">pam</span>(data.protein, <span class="dt">k=</span><span class="dv">5</span>)</a>
+<a class="sourceLine" id="cb33-3" title="3">knitr<span class="op">::</span><span class="kw">kable</span>(pm<span class="op">$</span>medoids)</a></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">RedMeat</th>
+<th align="right">WhiteMeat</th>
+<th align="right">Eggs</th>
+<th align="right">Milk</th>
+<th align="right">Fish</th>
+<th align="right">Cereals</th>
+<th align="right">Starch</th>
+<th align="right">Nuts</th>
+<th align="right">Fr.Veg</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Italy</td>
+<td align="right">9.0</td>
+<td align="right">5.1</td>
+<td align="right">2.9</td>
+<td align="right">13.7</td>
+<td align="right">3.4</td>
+<td align="right">36.8</td>
+<td align="right">2.1</td>
+<td align="right">4.3</td>
+<td align="right">6.7</td>
+</tr>
+<tr class="even">
+<td>Switzerland</td>
+<td align="right">13.1</td>
+<td align="right">10.1</td>
+<td align="right">3.1</td>
+<td align="right">23.8</td>
+<td align="right">2.3</td>
+<td align="right">25.6</td>
+<td align="right">2.8</td>
+<td align="right">2.4</td>
+<td align="right">4.9</td>
+</tr>
+<tr class="odd">
+<td>Yugoslavia</td>
+<td align="right">4.4</td>
+<td align="right">5.0</td>
+<td align="right">1.2</td>
+<td align="right">9.5</td>
+<td align="right">0.6</td>
+<td align="right">55.9</td>
+<td align="right">3.0</td>
+<td align="right">5.7</td>
+<td align="right">3.2</td>
+</tr>
+<tr class="even">
+<td>Sweden</td>
+<td align="right">9.9</td>
+<td align="right">7.8</td>
+<td align="right">3.5</td>
+<td align="right">24.7</td>
+<td align="right">7.5</td>
+<td align="right">19.5</td>
+<td align="right">3.7</td>
+<td align="right">1.4</td>
+<td align="right">2.0</td>
+</tr>
+<tr class="odd">
+<td>Spain</td>
+<td align="right">7.1</td>
+<td align="right">3.4</td>
+<td align="right">3.1</td>
+<td align="right">8.6</td>
+<td align="right">7.0</td>
+<td align="right">29.2</td>
+<td align="right">5.7</td>
+<td align="right">5.9</td>
+<td align="right">7.2</td>
+</tr>
+</tbody>
+</table>
+<p>El valor que devuelve la función <code>pam</code> es similar al que devuelve <code>kmeans</code>, excepto que en lugar de tener la propiedad <code>centers</code>, ahora tenemos <code>medoids</code>.</p>
+<p>Podemos visualizar la agrupación resultante.</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb34-1" title="1"><span class="kw">fviz_cluster</span>(pm, <span class="dt">data=</span>data.protein, <span class="dt">labelsize =</span> <span class="dv">8</span>)</a></code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<div id="custerrclara" class="section level3">
+<h3><span class="header-section-number">1.5.1</span> <code>CusterR::clara</code></h3>
+<p>Como es lógico, <em>pam</em> es computacionalmente más costoso que <em>k-means</em>, pues calcular el <em>medoid</em> es mucho más difícil que hacer un promedio. Existe una alternativa eficiente a <em>k-medoids</em>, <em>clara</em> para agrupar grandes volúmenes de datos. Se basa en agrupar primero una muestra de los datos originales y luego asignar los datos restantes a estos grupos.</p>
+<p>Utilizaremos la función <code>Clara_Medoids</code> del paquete <code>ClusterR</code>, porque vamos a trabajar con la misma foto que usamos para ilustrar <code>MiniBatchKmeans</code>.</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb35-1" title="1">clara.m =<span class="st"> </span><span class="kw">Clara_Medoids</span>(img.vector, <span class="dt">clusters =</span> <span class="dv">10</span>, <span class="dt">samples =</span> <span class="dv">10</span>,</a>
+<a class="sourceLine" id="cb35-2" title="2">                        <span class="dt">sample_size =</span> <span class="fl">0.001</span>)</a></code></pre></div>
+<p>Hay que ser muy cuidadosos aquí con los parámetros, <code>sample</code> y <code>sample_size</code>, porque tenemos muchos datos, y esta función es muy costosa computacionalmente si aumentamos estos parámetros.</p>
+<p>A continuación asignamos cada pixel a su color correspondiente, y mostramos la nueva imagen.</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb36-1" title="1">clara.pred =<span class="st"> </span><span class="kw">predict_Medoids</span>(img.vector, clara.m<span class="op">$</span>medoids)</a>
+<a class="sourceLine" id="cb36-2" title="2">new.img =<span class="st"> </span>clara.m<span class="op">$</span>medoids[clara.pred<span class="op">$</span>clusters, ] </a>
+<a class="sourceLine" id="cb36-3" title="3"><span class="kw">dim</span>(new.img) =<span class="st"> </span><span class="kw">c</span>(<span class="kw">nrow</span>(img), <span class="kw">ncol</span>(img), <span class="dv">3</span>) </a>
+<a class="sourceLine" id="cb36-4" title="4"><span class="kw">imageShow</span>(new.img)</a></code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+</div>
+</div>
+<div id="selección-de-k" class="section level2">
+<h2><span class="header-section-number">1.6</span> Selección de K</h2>
+<p>En esta sección estudiaremos tres técnicas para calcular el número óptimo de clusters. Primero, vamos a sacar una muestra de nuestros datos de menos tamaño, ya que los cálculos que haremos serán más costosos.</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb37-1" title="1"><span class="kw">set.seed</span>(<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb37-2" title="2">img.vector.small =<span class="st"> </span>img.vector[<span class="kw">sample</span>(<span class="kw">nrow</span>(img.vector),<span class="dv">1000</span>),]</a></code></pre></div>
+<div id="método-del-codo" class="section level3">
+<h3><span class="header-section-number">1.6.1</span> Método del codo</h3>
+<p>La idea básica de los algoritmos partitivos es obtener cluster con la mínima WSS (within-cluster sum of squares), que mide cuán compactos son los clusters. Pudiéramos intentar quedarnos con el número de clusters <code>nclust</code> que minimiza este valor. Sin embargo, WSS siempre decrece a medida que consideramos un mayor número de grupos.</p>
+<p>El método del codo mira el valor de WSS con respecto al número de grupos considerados, y busca el primer punto en que hay un cambio brusco en la curva, es decir, que adicionar un grupo nuevo no mejora demasiado con respecto a lo que ya había.</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb38-1" title="1"><span class="kw">library</span>(factoextra)</a>
+<a class="sourceLine" id="cb38-2" title="2"></a>
+<a class="sourceLine" id="cb38-3" title="3"><span class="kw">fviz_nbclust</span>(img.vector.small, kmeans, <span class="dt">method =</span> <span class="st">&quot;wss&quot;</span>)</a></code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+</div>
+<div id="método-average-silhouette" class="section level3">
+<h3><span class="header-section-number">1.6.2</span> Método average silhouette</h3>
+<p>La idea básica de este método es medir la calidad de la agrupación en función de cuán bien encierra los datos en los diferentes grupos. ¿Debería cambiar mucho la silueta del cluster si quitamos alguna de sus observaciones?</p>
+<p>El método de la silueta promedio calcula la silueta de los grupos para distintos números de grupos <code>nclust</code>. El mejor número es aquel que maximiza la silueta.</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb39-1" title="1"><span class="kw">fviz_nbclust</span>(img.vector.small, kmeans, <span class="dt">method =</span> <span class="st">&quot;silhouette&quot;</span>)</a></code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+</div>
+<div id="método-gap-statistic" class="section level3">
+<h3><span class="header-section-number">1.6.3</span> Método Gap statistic</h3>
+<p>Este se puede considerar el más formal de los métodos, y puede ser aplicado a cualquier método de clustering, incluyendo clúster jerárquico.</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb40-1" title="1"><span class="kw">set.seed</span>(<span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb40-2" title="2">gap_stat =<span class="st"> </span>cluster<span class="op">::</span><span class="kw">clusGap</span>(img.vector.small, <span class="dt">FUN =</span> kmeans, </a>
+<a class="sourceLine" id="cb40-3" title="3">                            <span class="dt">K.max =</span> <span class="dv">20</span>)</a>
+<a class="sourceLine" id="cb40-4" title="4"><span class="kw">fviz_gap_stat</span>(gap_stat, <span class="dt">maxSE =</span> <span class="kw">list</span>(<span class="dt">method=</span><span class="st">&quot;globalmax&quot;</span>))</a></code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<!-- ## spark kmeans -->
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="clústers-jerárquicos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-kmean.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
